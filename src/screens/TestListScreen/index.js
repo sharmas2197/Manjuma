@@ -33,7 +33,11 @@ const TestkListScreen = props => {
   const navigate = action => {
     if (action === 'popup') {
       navigation.navigate('TestScreen', params);
-    } // rest actions defined here
+    }else if(action === "Activities"){
+      navigation.navigate('FunActivityScreen', params);
+    }else{
+      navigation.navigate('FunActivityScreen', params);
+    }
   };
 
   function ItemBox(test, index) {
