@@ -9,6 +9,7 @@ import TestScreen from '../screens/TestScreen';
 import FunActivityScreen from '../screens/FunActivityScreen';
 import LeaderboardScreen from '../screens/LeaderboardScreen';
 import DisordersScreen from '../screens/DisordersScreen';
+import GameActivity from '../screens/GameActivity';
 
 export default function Navigator() {
   const Stack = createNativeStackNavigator();
@@ -39,12 +40,17 @@ export default function Navigator() {
         <Stack.Screen
           name="FunActivityScreen"
           component={FunActivityScreen}
-          options={{title: 'Fun Activities'}} // Optional: More user-friendly title
+          options={{headerShown: false}} // Optional: More user-friendly title
         />
         <Stack.Screen
           name="LeaderboardScreen"
           component={LeaderboardScreen}
           options={{title: 'Leaderboard'}} // Optional: More user-friendly title
+        />
+          <Stack.Screen
+          name="GameActivity"
+          component={GameActivity}
+          options={{headerShown: false}} // Optional: Corrected title for better readability
         />
       </Stack.Navigator>
     </NavigationContainer>
