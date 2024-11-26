@@ -94,7 +94,7 @@ const FunActivityScreen = (props) => {
       <Text style={styles.headingText}>Development Activities</Text>
 
       <Text style={styles.subheadingText}>
-        Learning through play and guidance
+        Learning through play and guidance will help
       </Text>
       <CardView data={kidsActivityData} />
       <CardView data={parentsActivityData} />
