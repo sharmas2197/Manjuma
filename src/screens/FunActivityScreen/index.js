@@ -10,7 +10,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import LottieView from 'lottie-react-native';
 import styles from './styles';
 import {LanguageContext} from '../../context/LanguageContext';
-import activityData from '../../data/activityData.json';
+import { GlobalDevelopmentalDelayData } from '../../data/parentsActivity';
 
 const translations = {
   en: {
@@ -103,6 +103,8 @@ const FunActivityScreen = ({navigation}) => {
     console.log('Current Language:', currentLanguage);
   }, [currentLanguage]);
 
+  const activityData = GlobalDevelopmentalDelayData;
+  
   // Import data from JSON
   const kidsActivityData = {
     ...activityData.kidsActivityData,
