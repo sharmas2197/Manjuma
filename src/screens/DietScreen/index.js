@@ -3,7 +3,40 @@ import {View, Text, ScrollView, TouchableOpacity, Platform} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import * as Animatable from 'react-native-animatable';
 import {useLanguage} from '../../context/LanguageContext';
+import LottieView from 'lottie-react-native';
 import styles from './styles';
+
+const FloatingAnimation = ({source, style}) => {
+  const animationRef = useRef(null);
+
+  React.useEffect(() => {
+    if (animationRef.current) {
+      animationRef.current.play();
+    }
+  }, []);
+
+  return (
+    <LottieView
+      ref={animationRef}
+      source={source}
+      autoPlay={true}
+      loop={true}
+      speed={0.8}
+      style={[styles.floatingAnimation, style]}
+      renderMode="SOFTWARE"
+    />
+  );
+};
+
+const lottieIcons = {
+  banana: require('../../res/banana.json'),
+  chicken: require('../../res/chicken.json'),
+  fish: require('../../res/fish.json'),
+  fruits: require('../../res/fruits.json'),
+  orange: require('../../res/orange.json'),
+  avoidFood: require('../../res/avoidFood.json'),
+  diet: require('../../res/diet.json'),
+};
 
 const DietScreen = props => {
   const cardRefs = useRef([]);
@@ -20,6 +53,7 @@ const DietScreen = props => {
           'Magnesium: leafy greens, nuts, fish, cereals',
         ],
         timeOfDay: 'Daily Essential',
+        lottieIcon: lottieIcons.chicken,
       },
       {
         title: 'Brain-Boosting Foods',
@@ -30,6 +64,7 @@ const DietScreen = props => {
           'Vitamin B: cheese, sunflower seeds, carrots',
         ],
         timeOfDay: 'All meals',
+        lottieIcon: lottieIcons.fish
       },
       {
         title: 'Protein-Rich Foods',
@@ -40,6 +75,7 @@ const DietScreen = props => {
           'Plant proteins: lentils, beans, legumes',
         ],
         timeOfDay: 'Main meals',
+        lottieIcon: lottieIcons.chicken
       },
       {
         title: 'Gut Health Foods',
@@ -50,6 +86,7 @@ const DietScreen = props => {
           'Gluten-free options',
         ],
         timeOfDay: 'Daily',
+        lottieIcon: lottieIcons.banana
       },
       {
         title: 'Antioxidant-Rich Foods',
@@ -60,6 +97,7 @@ const DietScreen = props => {
           'Healthy fats: almonds, olive oil',
         ],
         timeOfDay: 'Daily',
+        lottieIcon: lottieIcons.orange
       },
       {
         title: 'Foods to Avoid',
@@ -73,6 +111,7 @@ const DietScreen = props => {
         ],
         timeOfDay: 'Avoid',
         isWarning: true,
+        lottieIcon: lottieIcons.avoidFood
       },
     ],
     hi: [
@@ -85,6 +124,7 @@ const DietScreen = props => {
           'मैग्नीशियम: हरी पत्तेदार सब्जियां, मेवे, मछली, अनाज',
         ],
         timeOfDay: 'दैनिक आवश्यक',
+        lottieIcon: lottieIcons.chicken 
       },
       {
         title: 'दिमाग को बढ़ावा देने वाले खाद्य पदार्थ',
@@ -95,6 +135,7 @@ const DietScreen = props => {
           'विटामिन बी: पनीर, सूरजमुखी के बीज, गाजर',
         ],
         timeOfDay: 'सभी भोजन',
+        lottieIcon: lottieIcons.fish
       },
       {
         title: 'प्रोटीन युक्त खाद्य पदार्थ',
@@ -105,26 +146,30 @@ const DietScreen = props => {
           'पौधे प्रोटीन: दाल, फलियां, दलहन',
         ],
         timeOfDay: 'मुख्य भोजन',
+        lottieIcon: lottieIcons.chicken
       },
       {
         title: 'पाचन स्वास्थ्य खाद्य पदार्थ',
-        description: 'पाचन और मानसिक स्वास्थ्य का समर्थन करने वाले खाद्य पदार्थ',
+        description:
+          'पाचन और मानसिक स्वास्थ्य का समर्थन करने वाले खाद्य पदार्थ',
         tips: [
           'प्रोबायोटिक्स: दही, केला',
           'प्रीबायोटिक्स: प्याज, लहसुन',
           'ग्लूटेन मुक्त विकल्प',
         ],
         timeOfDay: 'दैनिक',
+        lottieIcon: lottieIcons.banana
       },
       {
         title: 'एंटीऑक्सीडेंट युक्त खाद्य पदार्थ',
-        description: 'मस्तिष्क स्वास्थ्य की रक्षा करने वाले खाद्य पदार्थ',
+        description: 'मस्तिष्क स्वास्थ्य की रक्षा करने वले खाद्य पदार्थ',
         tips: [
           'फल: संतरा, अंगूर, कीवी, तरबूज',
           'सब्जियां: पालक',
           'स्वस्थ वसा: बादाम, जैतून का तेल',
         ],
         timeOfDay: 'दैनिक',
+        lottieIcon: lottieIcons.orange
       },
       {
         title: 'परहेज करने योग्य खाद्य पदार्थ',
@@ -138,6 +183,7 @@ const DietScreen = props => {
         ],
         timeOfDay: 'बचें',
         isWarning: true,
+        lottieIcon: lottieIcons.avoidFood
       },
     ],
   };
@@ -175,10 +221,15 @@ const DietScreen = props => {
   });
 
   const renderDietCard = (diet, index) => (
-    <TouchableOpacity style={styles.cardContainer} activeOpacity={1} key={index}>
+    <TouchableOpacity
+      style={styles.cardContainer}
+      activeOpacity={1}
+      key={index}>
       <Animatable.View ref={ref => (cardRefs.current[index] = ref)}>
         <LinearGradient
-          colors={diet.isWarning ? ['#FFCDD2', '#EF9A9A'] : getCardColors(index)}
+          colors={
+            diet.isWarning ? ['#FFCDD2', '#EF9A9A'] : getCardColors(index)
+          }
           start={{x: 0, y: 0}}
           end={{x: 1, y: 1}}
           style={styles.gradientCard}>
@@ -187,25 +238,34 @@ const DietScreen = props => {
             <Animatable.Text
               animation="pulse"
               iterationCount="infinite"
-              style={[
-                styles.timeOfDay,
-                diet.isWarning && styles.warningText,
-              ]}>
+              style={[styles.timeOfDay, diet.isWarning && styles.warningText]}>
               {diet.timeOfDay}
             </Animatable.Text>
           </View>
-          <Text style={styles.cardDescription}>{diet.description}</Text>
+          <View style={styles.descriptionWrapper}>
+            <Text style={styles.cardDescription}>{diet.description}</Text>
+            <View style={styles.lottieWrapper}>
+              <LottieView
+                source={diet.lottieIcon}
+                autoPlay
+                loop
+                style={styles.cardLottie}
+              />
+            </View>
+          </View>
           <View style={styles.tipsContainer}>
-            {diet.tips.map((tip, tipIndex) => (
-              <Animatable.View
-                key={tipIndex}
-                animation="fadeInLeft"
-                delay={tipIndex * 100}>
-                <Text style={styles.tipText}>
-                  {diet.isWarning ? '⚠️' : '🌟'} {tip}
-                </Text>
-              </Animatable.View>
-            ))}
+            <View style={styles.tipsContent}>
+              {diet.tips.map((tip, tipIndex) => (
+                <Animatable.View
+                  key={tipIndex}
+                  animation="fadeInLeft"
+                  delay={tipIndex * 100}>
+                  <Text style={styles.tipText}>
+                    {diet.isWarning ? '⚠️' : '🌟'} {tip}
+                  </Text>
+                </Animatable.View>
+              ))}
+            </View>
           </View>
         </LinearGradient>
       </Animatable.View>
@@ -218,13 +278,27 @@ const DietScreen = props => {
       start={{x: 0, y: 0}}
       end={{x: 1, y: 1}}
       style={styles.container}>
+      {/* Background Animations */}
+      <View style={styles.animationContainer}>
+        <FloatingAnimation
+          source={lottieIcons.diet}
+          style={{
+            top: '2%',
+            left: '2%',
+            transform: [{scale: 1.3}],
+            opacity: 1,
+          }}
+        />
+      </View>
+
       <Animatable.Text
         animation="fadeInDown"
         duration={800}
         useNativeDriver={true}
         style={styles.headerText}>
-        {isHindi ? 'ADHD-अनुकूल आहार गाइड' : 'ADHD-Friendly Diet Guide'}
+        {isHindi ? 'अनुकूल आहार गाइड' : 'Friendly Diet Guide'}
       </Animatable.Text>
+
       <ScrollView
         style={styles.scrollView}
         showsVerticalScrollIndicator={false}

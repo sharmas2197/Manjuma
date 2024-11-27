@@ -5,6 +5,8 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 40,
     padding: 16,
+    position: 'relative',
+    overflow: 'hidden',
   },
   headerText: {
     fontSize: 28,
@@ -13,12 +15,16 @@ const styles = StyleSheet.create({
     marginBottom: 50,
     textAlign: 'center',
     marginTop: 20,
+    paddingLeft: 50,
     textShadowColor: 'rgba(0, 0, 0, 0.2)',
     textShadowOffset: {width: 1, height: 1},
     textShadowRadius: 3,
+    zIndex: 1,
+    position: 'relative',
   },
   scrollView: {
     flex: 1,
+    zIndex: 1,
   },
   cardContainer: {
     marginBottom: 20,
@@ -34,6 +40,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     borderWidth: 2,
     borderColor: 'rgba(255, 255, 255, 0.8)',
+    overflow: 'hidden',
   },
   cardHeader: {
     flexDirection: 'row',
@@ -68,8 +75,28 @@ const styles = StyleSheet.create({
   cardDescription: {
     fontSize: 16,
     color: '#333',
-    marginBottom: 12,
     fontWeight: '500',
+    flex: 1,
+    paddingRight: 70,
+    lineHeight: 22,
+  },
+  descriptionWrapper: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    marginBottom: 12,
+    position: 'relative',
+    minHeight: 50,
+  },
+  lottieWrapper: {
+    position: 'absolute',
+    right: -10,
+    top: -10,
+    width: 100,
+    height: 100,
+  },
+  cardLottie: {
+    width: '100%',
+    height: '100%',
   },
   tipsContainer: {
     marginTop: 10,
@@ -77,12 +104,16 @@ const styles = StyleSheet.create({
     padding: 12,
     borderRadius: 15,
   },
+  tipsContent: {
+    width: '100%',
+  },
   tipText: {
     fontSize: 16,
     color: '#333',
     marginBottom: 8,
     fontWeight: '500',
     lineHeight: 22,
+    paddingRight: 10,
   },
   languageToggle: {
     backgroundColor: 'rgba(255, 255, 255, 0.2)',
@@ -98,6 +129,20 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: '600',
+  },
+  floatingAnimation: {
+    position: 'absolute',
+    width: 100,
+    height: 100,
+    zIndex: 0,
+    opacity: 0.8,
+  },
+  animationContainer: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    zIndex: 0,
+    pointerEvents: 'none',
   },
 });
 
