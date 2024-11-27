@@ -3,7 +3,7 @@ import {
   View, 
   Text, 
   TouchableOpacity, 
-  ScrollView,
+  FlatList,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import LottieView from 'lottie-react-native';
@@ -94,6 +94,25 @@ const ActivitySection = ({data, onActivityPress, currentLanguage, lottieAnimatio
   </View>
 );
 
+const Header = ({ currentLanguage }) => (
+  <View style={styles.header}>
+    <LottieView
+      source={require('../../res/play.json')}
+      autoPlay
+      loop
+      style={styles.mainHeaderAnimation}
+    />
+    <View style={styles.headerTextContainer}>
+      <Text style={styles.headingText}>
+        {translations[currentLanguage].developmentActivities}
+      </Text>
+      <Text style={styles.subheadingText}>
+        {translations[currentLanguage].learningThroughPlay}
+      </Text>
+    </View>
+  </View>
+);
+
 const FunActivityScreen = (props) => {
   const {isHindi} = useContext(LanguageContext);
   const currentLanguage = isHindi ? 'hi' : 'en';
@@ -130,54 +149,43 @@ const FunActivityScreen = (props) => {
     }
   };
 
+  const renderItem = ({ item }) => {
+    return (
+      <ActivitySection
+        data={item}
+        onActivityPress={handleActivityPress}
+        currentLanguage={currentLanguage}
+        lottieAnimation={item.animation}
+      />
+    );
+  };
+
+  const sections = activityData && Object.keys(activityData).length > 0 ? [
+    {
+      ...activityData.kidsActivityData,
+      animation: require('../../res/tiger.json'),
+    },
+    {
+      ...activityData.parentsActivityData,
+      animation: require('../../res/parent.json'),
+    }
+  ] : [];
+
   return (
     <LinearGradient
       colors={['#FF79B0', '#B388FF', '#8C9EFF']}
       start={{x: 0, y: 0}}
       end={{x: 1, y: 1}}
       style={styles.container}>
-      <ScrollView 
-        style={styles.scrollView}
+      <FlatList
+        data={sections}
+        renderItem={renderItem}
+        keyExtractor={(item, index) => `section-${index}`}
         showsVerticalScrollIndicator={false}
-        bounces={true}>
-        <View style={styles.header}>
-          <LottieView
-            source={require('../../res/play.json')}
-            autoPlay
-            loop
-            style={styles.mainHeaderAnimation}
-          />
-          <View style={styles.headerTextContainer}>
-            <Text style={styles.headingText}>
-              {translations[currentLanguage].developmentActivities}
-            </Text>
-            <Text style={styles.subheadingText}>
-              {translations[currentLanguage].learningThroughPlay}
-            </Text>
-          </View>
-        </View>
-        
-        {
-          activityData && Object.keys(activityData).length > 0 && (
-            <ActivitySection 
-              data={activityData.kidsActivityData} 
-              onActivityPress={handleActivityPress}
-              currentLanguage={currentLanguage}
-              lottieAnimation={require('../../res/tiger.json')}
-            />
-          )
-        }
-                {
-          activityData && Object.keys(activityData).length > 0 && (
-            <ActivitySection 
-            data={activityData.parentsActivityData} 
-            onActivityPress={handleActivityPress}
-            currentLanguage={currentLanguage}
-            lottieAnimation={require('../../res/parent.json')}
-          />
-          )
-        }
-      </ScrollView>
+        bounces={true}
+        ListHeaderComponent={<Header currentLanguage={currentLanguage} />}
+        contentContainerStyle={styles.scrollView}
+      />
     </LinearGradient>
   );
 };
