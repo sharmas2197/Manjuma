@@ -4,7 +4,6 @@ import {
   Text, 
   TouchableOpacity, 
   ScrollView,
-  Animated,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import LottieView from 'lottie-react-native';
@@ -69,15 +68,15 @@ const ActivityCard = ({item, onPress, currentLanguage}) => {
   );
 };
 
-const ActivitySection = ({data, onActivityPress, currentLanguage}) => (
+const ActivitySection = ({data, onActivityPress, currentLanguage, lottieAnimation}) => (
   <View style={styles.sectionContainer}>
     <View style={styles.sectionHeaderContainer}>
       <Text style={styles.sectionTitle}>
         {translations[currentLanguage][data.header_text] || data.header_text}
       </Text>
-      {data.lottieAnimation && (
+      {lottieAnimation && (
         <LottieView
-          source={data.lottieAnimation}
+          source={lottieAnimation}
           autoPlay
           loop
           style={styles.headerAnimation}
@@ -95,26 +94,27 @@ const ActivitySection = ({data, onActivityPress, currentLanguage}) => (
   </View>
 );
 
-const FunActivityScreen = ({navigation}) => {
+const FunActivityScreen = (props) => {
   const {isHindi} = useContext(LanguageContext);
   const currentLanguage = isHindi ? 'hi' : 'en';
+  const navigation = props.navigation;
+  const [activityData, setActivityData] = useState({});
   
-  useEffect(() => {
-    console.log('Current Language:', currentLanguage);
-  }, [currentLanguage]);
+  useEffect(() =>{
+    let finalData = GlobalDevelopmentalDelayData;
 
-  const activityData = GlobalDevelopmentalDelayData;
-  
-  // Import data from JSON
-  const kidsActivityData = {
-    ...activityData.kidsActivityData,
-    lottieAnimation: require('../../res/tiger.json')  // Need to require animation files dynamically
-  };
+    let selectedDisorderId = props.route.params.disorderId;
 
-  const parentsActivityData = {
-    ...activityData.parentsActivityData,
-    lottieAnimation: require('../../res/parent.json')
-  };
+    switch (selectedDisorderId) {
+      case 1:
+        finalData = GlobalDevelopmentalDelayData
+        break;
+    
+      default:
+        break;
+    }    
+    setActivityData(finalData);
+  }, [])
 
   const handleActivityPress = (action, type, details) => {
     if (action === 'game_activity') {
@@ -157,16 +157,26 @@ const FunActivityScreen = ({navigation}) => {
           </View>
         </View>
         
-        <ActivitySection 
-          data={kidsActivityData} 
-          onActivityPress={handleActivityPress}
-          currentLanguage={currentLanguage}
-        />
-        <ActivitySection 
-          data={parentsActivityData} 
-          onActivityPress={handleActivityPress}
-          currentLanguage={currentLanguage}
-        />
+        {
+          activityData && Object.keys(activityData).length > 0 && (
+            <ActivitySection 
+              data={activityData.kidsActivityData} 
+              onActivityPress={handleActivityPress}
+              currentLanguage={currentLanguage}
+              lottieAnimation={require('../../res/tiger.json')}
+            />
+          )
+        }
+                {
+          activityData && Object.keys(activityData).length > 0 && (
+            <ActivitySection 
+            data={activityData.parentsActivityData} 
+            onActivityPress={handleActivityPress}
+            currentLanguage={currentLanguage}
+            lottieAnimation={require('../../res/parent.json')}
+          />
+          )
+        }
       </ScrollView>
     </LinearGradient>
   );
