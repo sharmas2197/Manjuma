@@ -5,36 +5,44 @@ import LottieView from 'lottie-react-native';
 import styles from './styles';
 import Colors from '../../CustomeStyles/Colors';
 import LinearGradient from 'react-native-linear-gradient';
+import {useLanguage} from '../../context/LanguageContext';
 
 const TestListScreen = props => {
   const params = props.route.params;
   const {navigation} = props;
-  
+  const {isHindi} = useLanguage();
+
   const testData = [
     {
-      name: 'Quiz',
+      name: isHindi ? 'प्रश्नोत्तरी' : 'Quiz',
       color: Colors.yellow,
       lottie: require('../../res/quiz2.json'),
       action: 'TestScreen',
-      description: 'Test your knowledge with fun quizzes',
+      description: isHindi 
+        ? 'मजेदार प्रश्नोत्तरी के साथ अपना ज्ञान जांचें'
+        : 'Test your knowledge with fun quizzes',
       gradient: ['#FFE0B2', '#FFB74D'],
       textColor: '#E65100',
     },
     {
-      name: 'Activities',
+      name: isHindi ? 'गतिविधियाँ' : 'Activities',
       color: Colors.lightPink,
       lottie: require('../../res/art1.json'),
       action: 'FunActivityScreen',
-      description: 'Engage in creative activities',
+      description: isHindi
+        ? 'रचनात्मक गतिविधियों में भाग लें'
+        : 'Engage in creative activities',
       gradient: ['#E1BEE7', '#CE93D8'],
       textColor: '#4A148C',
     },
     {
-      name: 'Diet',
+      name: isHindi ? 'आहार' : 'Diet',
       color: Colors.lightBlue,
       lottie: require('../../res/food1.json'),
-      action: 'FunActivityScreen',
-      description: 'Explore healthy diet plans',
+      action: 'DietScreen',
+      description: isHindi
+        ? 'स्वस्थ आहार योजनाओं का पता लगाएं'
+        : 'Explore healthy diet plans',
       gradient: ['#B3E5FC', '#81D4FA'],
       textColor: '#01579B',
     },
@@ -73,7 +81,9 @@ const TestListScreen = props => {
       start={{x: 0, y: 0}}
       end={{x: 1, y: 1}}
       style={styles.container}>
-      <Text style={styles.headingText}>Activity Area</Text>
+      <Text style={styles.headingText}>
+        {isHindi ? 'गतिविधि क्षेत्र' : 'Activity Area'}
+      </Text>
       {testData.map((item, index) => {
         return ItemBox(item, index);
       })}

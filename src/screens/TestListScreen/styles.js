@@ -4,6 +4,7 @@ import Colors from '../../CustomeStyles/Colors';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop: 40,
     paddingBottom: 10,
   },
   headingText: {
@@ -11,7 +12,7 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: 'bold',
     fontStyle: 'italic',
-    marginTop: 40,
+    marginTop: 20,
     alignSelf: 'center',
     elevation: 5,
     textShadowColor: 'rgba(0, 0, 0, 0.2)',

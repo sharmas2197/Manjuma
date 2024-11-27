@@ -3,15 +3,18 @@ import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import LottieView from 'lottie-react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import {useLanguage} from '../../context/LanguageContext';
 import styles from './styles';
 import {quiz1} from '../../data/test1data';
 import {quiz2} from '../../data/test2data';
 import {quiz3} from '../../data/test3data';
 
 const DisordersScreen = ({navigation}) => {
+  const {isHindi} = useLanguage();
+
   const testData = [
     {
-      name: 'Global Developmental Delay',
+      name: isHindi ? 'वैश्विक विकासात्मक देरी' : 'Global Developmental Delay',
       color: '#FEF08A',
       secondaryColor: '#FDE047',
       lottie: require('../../res/brain2.json'),
@@ -20,7 +23,7 @@ const DisordersScreen = ({navigation}) => {
       textColor: '#6B7280',
     },
     {
-      name: 'Autism Spectrum Disorder',
+      name: isHindi ? 'ऑटिज्म स्पेक्ट्रम विकार' : 'Autism Spectrum Disorder',
       color: '#FDA4AF',
       secondaryColor: '#FB7185',
       lottie: require('../../res/brain3.json'),
@@ -29,7 +32,9 @@ const DisordersScreen = ({navigation}) => {
       textColor: '#7F1D1D',
     },
     {
-      name: 'Attention Deficit/Hyperactivity Disorder',
+      name: isHindi 
+        ? 'ध्यान की कमी/अतिसक्रियता विकार' 
+        : 'Attention Deficit/Hyperactivity Disorder',
       color: '#93C5FD',
       secondaryColor: '#60A5FA',
       lottie: require('../../res/brain.json'),
@@ -72,7 +77,9 @@ const DisordersScreen = ({navigation}) => {
       start={{x: 0, y: 0}}
       end={{x: 1, y: 1}}
       style={styles.container}>
-      <Text style={styles.headingText}>Disorders</Text>
+      <Text style={styles.headingText}>
+        {isHindi ? 'विकार' : 'Disorders'}
+      </Text>
       {testData.map(renderDisorderCard)}
     </LinearGradient>
   );
