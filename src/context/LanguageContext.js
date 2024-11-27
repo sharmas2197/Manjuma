@@ -1,15 +1,28 @@
-import React, {createContext, useState, useContext} from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
-const LanguageContext = createContext();
+export const LanguageContext = createContext();
 
-export const LanguageProvider = ({children}) => {
+export const LanguageProvider = ({ children }) => {
   const [isHindi, setIsHindi] = useState(false);
 
+  const value = {
+    isHindi,
+    setIsHindi,
+    currentLanguage: isHindi ? 'hi' : 'en',
+    toggleLanguage: () => setIsHindi(prev => !prev)
+  };
+
   return (
-    <LanguageContext.Provider value={{isHindi, setIsHindi}}>
+    <LanguageContext.Provider value={value}>
       {children}
     </LanguageContext.Provider>
   );
 };
 
-export const useLanguage = () => useContext(LanguageContext); 
+export const useLanguage = () => {
+  const context = useContext(LanguageContext);
+  if (context === undefined) {
+    throw new Error('useLanguage must be used within a LanguageProvider');
+  }
+  return context;
+}; 

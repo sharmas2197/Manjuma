@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {View, StyleSheet} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import LanguageToggleButton from './LanguageToggleButton';
 
@@ -13,9 +12,11 @@ import LeaderboardScreen from '../screens/LeaderboardScreen';
 import DisordersScreen from '../screens/DisordersScreen';
 import GameActivity from '../screens/GameActivity';
 import DietScreen from '../screens/DietScreen';
+import ActivityDetails from '../screens/ActivityDetails';
 
-const NavigatorContent = () => {
-  const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator();
+
+const Navigator = () => {
   const [currentScreen, setCurrentScreen] = useState('DescriptionScreen');
 
   return (
@@ -68,6 +69,11 @@ const NavigatorContent = () => {
           component={DietScreen}
           options={{headerShown: false}}
         />
+        <Stack.Screen 
+          name="ActivityDetails" 
+          component={ActivityDetails}
+          options={{headerShown: false}}
+        />
       </Stack.Navigator>
       <View style={styles.languageToggleContainer}>
         <LanguageToggleButton currentScreen={currentScreen} />
@@ -76,13 +82,7 @@ const NavigatorContent = () => {
   );
 };
 
-export default function Navigator() {
-  return (
-    <NavigationContainer>
-      <NavigatorContent />
-    </NavigationContainer>
-  );
-}
+export default Navigator;
 
 const styles = StyleSheet.create({
   languageToggleContainer: {
