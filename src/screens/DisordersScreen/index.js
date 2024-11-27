@@ -57,7 +57,7 @@ const DisordersScreen = ({navigation}) => {
         style={styles.boxStyle}>
         <LottieView
           source={test.lottie}
-          style={{height: 80, width: 80}}
+          style={{height: 100, width: 100}}
           autoPlay
           loop
         />
