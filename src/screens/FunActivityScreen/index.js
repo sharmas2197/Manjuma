@@ -9,7 +9,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import LottieView from 'lottie-react-native';
 import styles from './styles';
 import {LanguageContext} from '../../context/LanguageContext';
-import { GlobalDevelopmentalDelayData } from '../../data/parentsActivity';
+import { GlobalDevelopmentalDelayData, AutismSpectrumDisorderData } from '../../data/parentsActivity';
 
 const translations = {
   en: {
@@ -120,7 +120,7 @@ const FunActivityScreen = (props) => {
   const [activityData, setActivityData] = useState({});
   
   useEffect(() =>{
-    let finalData = GlobalDevelopmentalDelayData;
+    let finalData = {}
 
     let selectedDisorderId = props.route.params.disorderId;
 
@@ -128,7 +128,11 @@ const FunActivityScreen = (props) => {
       case 1:
         finalData = GlobalDevelopmentalDelayData
         break;
-    
+      
+      case 2:
+        finalData = AutismSpectrumDisorderData
+        break;
+
       default:
         break;
     }    

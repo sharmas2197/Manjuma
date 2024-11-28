@@ -1,0 +1,302 @@
+{
+  "kidsActivityData": {
+    "header_text": "kidsActivities",
+    "lottieAnimation": "../../res/tiger.json",
+    "cardsData": [
+      {
+        "heading_text": {
+          "en": "Ball sort puzzle",
+          "hi": "गेंद छांटने की पहेली"
+        },
+        "sub_heading_text": {
+          "en": "Sort colorful balls to match patterns and develop logical thinking",
+          "hi": "तार्किक सोच विकसित करने के लिए रंगीन गेंदों को पैटर्न से मिलान करें"
+        },
+        "button_text": "playNow",
+        "cardColor": "#FFF5F7",
+        "textColor": "#FF4081",
+        "buttonGradient": ["#FF4081", "#FF79B0"],
+        "action": "game_activity",
+        "type": "puzzle"
+      },
+      {
+        "heading_text": {
+          "en": "Math & Nursery Quiz",
+          "hi": "गणित और नर्सरी क्विज"
+        },
+        "sub_heading_text": {
+          "en": "Fun Quizzes combining basic math and nursery rhymes",
+          "hi": "बुनियादी गणित और नर्सरी कविताओं को मिलाकर मजेदार प्रश्नोत्तरी"
+        },
+        "button_text": "startQuiz",
+        "cardColor": "#F0F7FF",
+        "textColor": "#2196F3",
+        "buttonGradient": ["#2196F3", "#64B5F6"],
+        "action": "game_activity",
+        "type": "quiz"
+      }
+    ]
+  },
+  "parentsActivityData": {
+    "header_text": "parentsActivities",
+    "lottieAnimation": "../../res/parent.json",
+    "cardsData": [
+      {
+        "heading_text": {
+          "en": "Fun Activities",
+          "hi": "मज़ेदार गतिविधियां"
+        },
+        "sub_heading_text": {
+          "en": "Engage through play and creative activities",
+          "hi": "खेल और रचनात्मक गतिविधियों के माध्यम से जुड़ें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#FFF3E0",
+        "textColor": "#FF9800",
+        "buttonGradient": ["#FF9800", "#FFB74D"],
+        "action": "parent_activity",
+        "type": "fun",
+        "details": {
+          "title": {
+            "en": "Fun Development Activities",
+            "hi": "मज़ेदार विकास गतिविधियां"
+          },
+          "description": {
+            "en": "Engage your child in various fun activities like gardening, yoga, singing, and cooking to develop multiple skills and encourage creativity.",
+            "hi": "कई कौशलों को विकसित करने और रचनात्मकता को प्रोत्साहित करने के लिए अपने बच्चे को बागवानी, योग, गायन और खाना पकाने जैसी विभिन्न मज़ेदार गतिविधियों में शामिल करें।"
+          },
+          "steps": {
+            "en": [
+              {
+                "title": "Bubble Blowing",
+                "description": "Blowing and catching bubbles can help children with sensory perception and focus. Create your own bubble solution and try using different kitchen utensils for bigger and better bubbles.",
+                "step": "Try bubble blowing activities for sensory development"
+              },
+              {
+                "title": "Gardening",
+                "description": "Caring for a small plant teaches children empathy, responsibility, and the value of nurturing. Even without outdoor space, children can still benefit by taking plants outside to soak up sunlight.",
+                "step": "Practice gardening or plant care for responsibility"
+              },
+              {
+                "title": "Yoga",
+                "description": "Yoga helps children handle stress, focus better, improve balance, boost self-confidence, and increase self-awareness. It also promotes deep breathing and relaxation for managing stress and anxiety.",
+                "step": "Do yoga exercises for balance and focus"
+              },
+              {
+                "title": "Singing",
+                "description": "Encourage children to sing, which aids in their development and creativity. Explore new melodies as a family and enjoy listening to old favorites. Even if children don't initially like the songs, the memories of dancing to them will stay with them.",
+                "step": "Engage in singing activities for creativity"
+              },
+              {
+                "title": "Object Sorting",
+                "description": "Sorting activities are used in occupational therapy to support children with autism. Gather items like leaves, twigs, and rocks, then let your child organize them into different categories.",
+                "step": "Play sorting games with natural objects"
+              },
+              {
+                "title": "Cooking Together",
+                "description": "Encourage kids to help in the kitchen, despite mistakes. Showing patience and understanding will motivate them to learn new skills and boost their confidence.",
+                "step": "Cook simple recipes together"
+              },
+              {
+                "title": "Rock Painting",
+                "description": "Go find some rocks outside, clean the dirt off and decorate them. This activity helps develop creativity and fine motor skills while providing a calming sensory experience.",
+                "step": "Create art with rock painting"
+              },
+              {
+                "title": "Sharing Time",
+                "description": "Encourage your child to choose an item, talk about why they like it, describe it, and explain how it works. This helps them feel comfortable expressing themselves verbally and transitioning smoothly back to school or therapy.",
+                "step": "Organize sharing time sessions"
+              }
+            ],
+            "hi": [
+              {
+                "title": "बुलबुले उड़ाना",
+                "description": "बुलबुले उड़ाना और पकड़ना बच्चों की संवेदी धारणा और ध्यान में मदद कर सकता है। अपना खुद का बुलबुला घोल बनाएं और बड़े और बेहतर बुलबुलों के लिए विभिन्न रसोई के बर्तनों का उपयोग करने का प्रयास करें।",
+                "step": "संवेदी विकास के लिए बुलबुले उड़ाने की गतिविधियां करें"
+              },
+              {
+                "title": "बागवानी",
+                "description": "एक छोटे पौधे की देखभाल करना बच्चों को सहानुभूति, जिम्मेदारी और पोषण के मूल्य सिखाती है। बाहरी जगह के बिना भी, बच्चे पौधों को धूप में ले जाकर लाभान्वित हो सकते हैं।",
+                "step": "जिम्मेदारी के लिए बागवानी या पौधों की देखभाल का अभ्यास करें"
+              },
+              {
+                "title": "योग",
+                "description": "योग बच्चों को तनाव से निपटने, बेहतर ध्यान केंद्रित करने, संतुलन में सुधार, आत्मविश्वास बढ़ाने और आत्म-जागरूकता बढ़ाने में मदद करता है। यह तनाव और चिंता को प्रबंधित करने के लिए गहरी सांस और आराम को बढ़ावा देता है।",
+                "step": "संतुलन और ध्यान के लिए योग व्यायाम करें"
+              },
+              {
+                "title": "गायन",
+                "description": "बच्चों को गाने के लिए प्रोत्साहित करें, जो उनके विकास और रचनात्मकता में मदद करता है। परिवार के रूप में नई धुनों का पता लगाएं और पुराने पसंदीदा को सुनने का आनंद लें।",
+                "step": "रचनात्मकता के लिए गायन गतिविधियों में शामिल हों"
+              },
+              {
+                "title": "वस्तु छंटाई",
+                "description": "ऑटिज्म वाले बच्चों की सहायता के लिए व्यावसायिक थेरेपी में छंटाई गतिविधियों का उपयोग किया जाता है। पत्तियां, टहनियां और पत्थर जैसी वस्तुएं इकट्ठा करें, फिर अपने बच्चे को उन्हें विभिन्न श्रेणियों में व्यवस्थित करने दें।",
+                "step": "प्राकृतिक वस्तुओं के साथ छंटाई खेल खेलें"
+              },
+              {
+                "title": "साथ में खाना पकाना",
+                "description": "गलतियों के बावजूद बच्चों को रसोई में मदद करने के लिए प्रोत्साहित करें। धैर्य और समझ दिखाने से उन्हें नई कौशल सीखने और आत्मविश्वास बढ़ाने की प्रेरणा मिलेगी।",
+                "step": "साथ में सरल व्यंजन बनाएं"
+              },
+              {
+                "title": "पत्थर पेंटिंग",
+                "description": "बाहर जाकर कुछ पत्थर ढूंढें, मिट्टी साफ करें और उन्हें सजाएं। यह गतिविधि शांत संवेदी अनुभव प्रदान करते हुए रचनात्मकता और महीन मोटर कौशल विकसित करने में मदद करती है।",
+                "step": "पत्थर पेंटिंग से कला बनाएं"
+              },
+              {
+                "title": "साझा करने का समय",
+                "description": "अपने बच्चे को कोई वस्तु चुनने, उसे पसंद करने का कारण बताने, उसका वर्णन करने और यह बताने के लिए प्रोत्साहित करें कि यह कैसे काम करती है। यह उन्हें मौखिक रूप से खुद को व्यक्त करने में सहज महसूस करने में मदद करता है।",
+                "step": "शेयरिंग टाइम सत्र आयोजित करें"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Eye Contact Activities",
+          "hi": "आंखों का संपर्क गतिविधियां"
+        },
+        "sub_heading_text": {
+          "en": "Improve social connection through eye contact games",
+          "hi": "आंखों के संपर्क वाले खेलों के माध्यम से सामाजिक संबंध सुधारें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#E8F5E9",
+        "textColor": "#4CAF50",
+        "buttonGradient": ["#4CAF50", "#81C784"],
+        "action": "parent_activity",
+        "type": "social",
+        "details": {
+          "title": {
+            "en": "Eye Contact Development",
+            "hi": "आंखों का संपर्क विकास"
+          },
+          "description": {
+            "en": "Practice activities that encourage eye contact through fun games and interactions to help develop social connection skills.",
+            "hi": "सामाजिक संबंध कौशल विकसित करने में मदद के लिए मज़ेदार खेलों और बातचीत के माध्यम से आंखों का संपर्क प्रोत्साहित करने वाली गतिविधियों का अभ्यास करें।"
+          },
+          "steps": {
+            "en": [
+              "Play peek-a-boo games in different settings",
+              "Use colorful accessories to attract attention",
+              "Make funny faces in the mirror",
+              "Play bubble-blowing games with eye contact",
+              "Engage in ball games with eye contact",
+              "Try face painting activities",
+              "Use swing activities for natural eye contact",
+              "Play board games that encourage face-to-face interaction"
+            ],
+            "hi": [
+              "विभिन्न स्थितियों में पीक-ए-बू खेल खेलें",
+              "ध्यान आकर्षित करने के लिए रंगीन एक्सेसरीज का उपयोग करें",
+              "दर्पण में मजेदार चेहरे बनाएं",
+              "आंखों के संपर्क के साथ बुलबुले उड़ाने के खेल खेलें",
+              "आंखों के संपर्क के साथ गेंद के खेल खेलें",
+              "फेस पेंटिंग गतिविधियां करें",
+              "प्राकृतिक आंखों के संपर्क के लिए झूला गतिविधियों का उपयोग करें",
+              "आमने-सामने की बातचीत को प्रोत्साहित करने वाले बोर्ड गेम खेलें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Calming Activities",
+          "hi": "शांत करने वाली गतिविधियां"
+        },
+        "sub_heading_text": {
+          "en": "Help regulate emotions and reduce anxiety",
+          "hi": "भावनाओं को नियंत्रित करने और चिंता को कम करने में मदद करें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#F3E5F5",
+        "textColor": "#9C27B0",
+        "buttonGradient": ["#9C27B0", "#BA68C8"],
+        "action": "parent_activity",
+        "type": "emotional",
+        "details": {
+          "title": {
+            "en": "Self-Regulation Activities",
+            "hi": "स्व-नियमन गतिविधियां"
+          },
+          "description": {
+            "en": "Help your child learn to manage emotions and reduce anxiety through calming activities and structured routines.",
+            "hi": "शांत गतिविधियों और संरचित दिनचर्या के माध्यम से अपने बच्चे को भावनाओं को प्रबंधित करने और चिंता को कम करने में मदद करें।"
+          },
+          "steps": {
+            "en": [
+              "Create a cozy snuggle time routine",
+              "Set appropriate screen time limits",
+              "Provide art materials for self-expression",
+              "Practice deep breathing exercises",
+              "Create a calm-down corner",
+              "Use weighted blankets when needed",
+              "Establish consistent daily routines",
+              "Allow quiet time for decompression"
+            ],
+            "hi": [
+              "आरामदायक स्नगल टाइम दिनचर्या बनाएं",
+              "उचित स्क्रीन टाइम सीमाएं निर्धारित करें",
+              "स्व-अभिव्यक्ति के लिए कला सामग्री प्रदान करें",
+              "गहरी सांस लेने के व्यायाम का अभ्यास करें",
+              "शांत होने का कोना बनाएं",
+              "जरूरत पड़ने पर भारी कंबल का उपयोग करें",
+              "स्थिर दैनिक दिनचर्या स्थापित करें",
+              "विश्राम के लिए शांत समय की अनुमति दें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Concentration Activities",
+          "hi": "एकाग्रता गतिविधियां"
+        },
+        "sub_heading_text": {
+          "en": "Improve focus and attention span",
+          "hi": "ध्यान और एकाग्रता अवधि में सुधार"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#E1F5FE",
+        "textColor": "#03A9F4",
+        "buttonGradient": ["#03A9F4", "#4FC3F7"],
+        "action": "parent_activity",
+        "type": "cognitive",
+        "details": {
+          "title": {
+            "en": "Concentration Development",
+            "hi": "एकाग्रता विकास"
+          },
+          "description": {
+            "en": "Help improve your child's concentration and attention span through structured activities and proper positioning techniques.",
+            "hi": "संरचित गतिविधियों और उचित स्थिति तकनीकों के माध्यम से अपने बच्चे की एकाग्रता और ध्यान अवधि में सुधार करने में मदद करें।"
+          },
+          "steps": {
+            "en": [
+              "Start with simple board games",
+              "Engage in craft activities",
+              "Practice pick and fill exercises",
+              "Do extended exhale activities",
+              "Ensure proper sitting position",
+              "Use timer-based activities",
+              "Create distraction-free environment",
+              "Gradually increase activity duration"
+            ],
+            "hi": [
+              "सरल बोर्ड गेम से शुरुआत करें",
+              "क्राफ्ट गतिविधियों में शामिल करें",
+              "पिक एंड फिल अभ्यास का अभ्यास करें",
+              "विस्तारित श्वास गतिविधियां करें",
+              "उचित बैठने की स्थिति सुनिश्चित करें",
+              "टाइमर-आधारित गतिविधियों का उपयोग करें",
+              "ध्यान भटकाने से मुक्त वातावरण बनाएं",
+              "धीरे-धीरे गतिविधि की अवधि बढ़ाएं"
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

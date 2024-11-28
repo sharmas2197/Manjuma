@@ -39,6 +39,45 @@ const ActivityDetails = ({route, navigation}) => {
 
   const currentLanguage = isHindi ? 'hi' : 'en';
 
+  const renderStep = (stepItem, index) => {
+    // Check if steps are in the new format (with title and description)
+    if (typeof stepItem === 'object' && stepItem.title) {
+      return (
+        <View key={index} style={[
+          styles.stepContainer,
+          !stepItem.description && styles.stepContainerSimple
+        ]}>
+          <View style={styles.stepHeader}>
+            <View style={styles.stepNumber}>
+              <Text style={styles.stepNumberText}>{index + 1}</Text>
+            </View>
+            <Text style={styles.stepTitle}>{stepItem.title}</Text>
+          </View>
+          {stepItem.description ? (
+            <>
+              <Text style={styles.stepDescription}>{stepItem.description}</Text>
+              <Text style={styles.stepText}>{stepItem.step}</Text>
+            </>
+          ) : (
+            <Text style={styles.stepTextSimple}>{stepItem.step}</Text>
+          )}
+        </View>
+      );
+    } else {
+      // Handle old format (simple string steps)
+      return (
+        <View key={index} style={styles.stepContainerSimple}>
+          <View style={styles.stepHeader}>
+            <View style={styles.stepNumber}>
+              <Text style={styles.stepNumberText}>{index + 1}</Text>
+            </View>
+            <Text style={styles.stepTextSimple}>{stepItem}</Text>
+          </View>
+        </View>
+      );
+    }
+  };
+
   return (
     <LinearGradient
       colors={['#FF79B0', '#B388FF', '#8C9EFF']}
@@ -73,14 +112,7 @@ const ActivityDetails = ({route, navigation}) => {
               <Text style={styles.stepsTitle}>
                 {isHindi ? 'चरण' : 'Steps to Follow'}
               </Text>
-              {(details.steps[currentLanguage] || details.steps).map((step, index) => (
-                <View key={index} style={styles.stepItem}>
-                  <View style={styles.stepNumber}>
-                    <Text style={styles.stepNumberText}>{index + 1}</Text>
-                  </View>
-                  <Text style={styles.stepText}>{step}</Text>
-                </View>
-              ))}
+              {details.steps[currentLanguage].map((step, index) => renderStep(step, index))}
             </>
           )}
         </View>
