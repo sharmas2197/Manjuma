@@ -1,15 +1,15 @@
-import React, {useState, useContext, useEffect} from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import {
-  View, 
-  Text, 
-  TouchableOpacity, 
+  View,
+  Text,
+  TouchableOpacity,
   FlatList,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import LottieView from 'lottie-react-native';
 import styles from './styles';
-import {LanguageContext} from '../../context/LanguageContext';
-import { GlobalDevelopmentalDelayData, AutismSpectrumDisorderData } from '../../data/parentsActivity';
+import { LanguageContext } from '../../context/LanguageContext';
+import { GlobalDevelopmentalDelayData, AutismSpectrumDisorderData, HyperactivityDisorderData } from '../../data/parentsActivity';
 
 const translations = {
   en: {
@@ -121,7 +121,6 @@ const FunActivityScreen = (props) => {
   
   useEffect(() =>{
     let finalData = {}
-
     let selectedDisorderId = props.route.params.disorderId;
 
     switch (selectedDisorderId) {
@@ -133,6 +132,8 @@ const FunActivityScreen = (props) => {
         finalData = AutismSpectrumDisorderData
         break;
 
+      case 3:
+        finalData = HyperactivityDisorderData  
       default:
         break;
     }    
@@ -141,7 +142,7 @@ const FunActivityScreen = (props) => {
 
   const handleActivityPress = (action, type, details) => {
     if (action === 'game_activity') {
-      navigation.navigate('GameActivity', { activityType: type });
+      // navigation.navigate('BallSortGame');
     } else if (action === 'parent_activity') {
       navigation.navigate('ActivityDetails', { 
         type,

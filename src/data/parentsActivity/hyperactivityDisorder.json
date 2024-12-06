@@ -1,0 +1,432 @@
+{
+  "kidsActivityData": {
+    "header_text": "kidsActivities",
+    "lottieAnimation": "../../res/tiger.json",
+    "cardsData": [
+      {
+        "heading_text": {
+          "en": "Ball sort puzzle",
+          "hi": "गेंद छांटने की पहेली"
+        },
+        "sub_heading_text": {
+          "en": "Sort colorful balls to match patterns and develop logical thinking",
+          "hi": "तार्किक सोच विकसित करने के लिए रंगीन गेंदों को पैटर्न से मिलान करें"
+        },
+        "button_text": "playNow",
+        "cardColor": "#FFF5F7",
+        "textColor": "#FF4081",
+        "buttonGradient": ["#FF4081", "#FF79B0"],
+        "action": "game_activity",
+        "type": "puzzle"
+      },
+      {
+        "heading_text": {
+          "en": "Math & Nursery Quiz",
+          "hi": "गणित और नर्सरी क्विज"
+        },
+        "sub_heading_text": {
+          "en": "Fun Quizzes combining basic math and nursery rhymes",
+          "hi": "बुनियादी गणित और नर्सरी कविताओं को मिलाकर मजेदार प्रश्नोत्तरी"
+        },
+        "button_text": "startQuiz",
+        "cardColor": "#F0F7FF",
+        "textColor": "#2196F3",
+        "buttonGradient": ["#2196F3", "#64B5F6"],
+        "action": "game_activity",
+        "type": "quiz"
+      }
+    ]
+  },
+  "parentsActivityData": {
+    "header_text": "parentsActivities",
+    "lottieAnimation": "../../res/parent.json",
+    "cardsData": [
+      {
+        "heading_text": {
+          "en": "Rewarding Good Behavior",
+          "hi": "अच्छे व्यवहार को पुरस्कृत करना"
+        },
+        "sub_heading_text": {
+          "en": "Effective strategies for encouraging positive behavior",
+          "hi": "सकारात्मक व्यवहार को प्रोत्साहित करने के लिए प्रभावी रणनीतियाँ"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#FFF3E0",
+        "textColor": "#FF9800",
+        "buttonGradient": ["#FF9800", "#FFB74D"],
+        "action": "parent_activity",
+        "type": "behavior",
+        "details": {
+          "title": {
+            "en": "Strategies for Rewarding Behavior",
+            "hi": "व्यवहार को पुरस्कृत करने की रणनीतियाँ"
+          },
+          "description": {
+            "en": "Rewarding good behavior with privileges, compliments, or activities is more effective than food or toys. Regularly change rewards to maintain interest, and use a chart to visually track achievements. Immediate rewards are more effective than future promises, and consequences should be clear and immediate, including time-outs and privilege withdrawal.",
+            "hi": "अच्छे व्यवहार को विशेषाधिकार, प्रशंसा या गतिविधियों के साथ पुरस्कृत करना भोजन या खिलौनों की तुलना में अधिक प्रभावी है। रुचि बनाए रखने के लिए नियमित रूप से पुरस्कार बदलें, और उपलब्धियों को दृश्य रूप से ट्रैक करने के लिए एक चार्ट का उपयोग करें। तात्कालिक पुरस्कार भविष्य के वादों की तुलना में अधिक प्रभावी होते हैं, और परिणाम स्पष्ट और तात्कालिक होने चाहिए, जिसमें समय-समय पर रोकना और विशेषाधिकारों की वापसी शामिल है।"
+          },
+          "steps": {
+            "en": [
+              "Identify specific behaviors to reward.",
+              "Create a reward chart to track achievements.",
+              "Use a variety of rewards to maintain interest.",
+              "Provide immediate rewards for good behavior.",
+              "Establish clear consequences for negative behavior.",
+              "Implement time-outs or privilege withdrawal when necessary."
+            ],
+            "hi": [
+              "पुरस्कृत करने के लिए विशिष्ट व्यवहारों की पहचान करें।",
+              "उपलब्धियों को ट्रैक करने के लिए एक पुरस्कार चार्ट बनाएं।",
+              "रुचि बनाए रखने के लिए पुरस्कारों की विविधता का उपयोग करें।",
+              "अच्छे व्यवहार के लिए तात्कालिक पुरस्कार प्रदान करें।",
+              "नकारात्मक व्यवहार के लिए स्पष्ट परिणाम स्थापित करें।",
+              "जरूरत पड़ने पर समय-समय पर रोकना या विशेषाधिकारों की वापसी लागू करें।"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Scavenger Hunt",
+          "hi": "खजाना खोज"
+        },
+        "sub_heading_text": {
+          "en": "A fun activity to enhance concentration and problem-solving skills",
+          "hi": "एक मजेदार गतिविधि जो ध्यान और समस्या-समाधान कौशल को बढ़ाती है"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#E8F5E9",
+        "textColor": "#4CAF50",
+        "buttonGradient": ["#4CAF50", "#81C784"],
+        "action": "parent_activity",
+        "type": "activity",
+        "details": {
+          "title": {
+            "en": "Scavenger Hunt",
+            "hi": "खजाना खोज"
+          },
+          "description": {
+            "en": "Provide a list of objects they can locate both indoors and outside, along with a map or hints to help them find what they're looking for. Children's concentration, problem-solving abilities, and cognitive development are all improved as they search for each item on the list. Whereas outdoor scavenger hunts may involve finding leaves, rocks, or other natural objects, indoor scavenger hunts may encompass discovering toys, books, or home goods.",
+            "hi": "उन्हें वस्तुओं की एक सूची प्रदान करें जो वे अंदर और बाहर दोनों जगह खोज सकते हैं, साथ ही उन्हें जो खोज रहे हैं उसे खोजने में मदद करने के लिए एक मानचित्र या संकेत। बच्चों का ध्यान, समस्या-समाधान क्षमताएँ, और संज्ञानात्मक विकास सभी को सूची में प्रत्येक वस्तु की खोज करते समय सुधारित किया जाता है। जबकि बाहरी खजाना खोजों में पत्ते, पत्थर, या अन्य प्राकृतिक वस्तुओं को खोजना शामिल हो सकता है, अंदर की खजाना खोजों में खिलौने, किताबें, या घरेलू सामान खोजने का समावेश हो सकता है।"
+          },
+          "steps": {
+            "en": [
+              "Prepare a list of objects for the children to find.",
+              "Create a map or provide hints to assist in locating the objects.",
+              "Set a time limit for the scavenger hunt to increase excitement.",
+              "Encourage teamwork if multiple children are participating.",
+              "Celebrate the completion of the hunt with a small reward or recognition."
+            ],
+            "hi": [
+              "बच्चों के लिए खोजने के लिए वस्तुओं की एक सूची तैयार करें।",
+              "वस्तुओं को खोजने में मदद करने के लिए एक मानचित्र बनाएं या संकेत प्रदान करें।",
+              "खोज के लिए एक समय सीमा निर्धारित करें ताकि उत्साह बढ़ सके।",
+              "यदि कई बच्चे भाग ले रहे हैं, तो टीमवर्क को प्रोत्साहित करें।",
+              "खोज के पूरा होने का जश्न मनाएं एक छोटे पुरस्कार या मान्यता के साथ।"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Sensory Play",
+          "hi": "संवेदी खेल"
+        },
+        "sub_heading_text": {
+          "en": "Engaging activities for focus and emotional balance",
+          "hi": "ध्यान और भावनात्मक संतुलन के लिए संलग्न गतिविधियाँ"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#F3E5F5",
+        "textColor": "#9C27B0",
+        "buttonGradient": ["#9C27B0", "#BA68C8"],
+        "action": "parent_activity",
+        "type": "activity",
+        "details": {
+          "title": {
+            "en": "Sensory Play",
+            "hi": "संवेदी खेल"
+          },
+          "description": {
+            "en": "Sensory play activities include tactile activities like finger painting or exploring sensory bins filled with materials such as rice, sand, or water beads. These activities offer a soothing yet stimulating experience that helps improve focus, self-regulation, and emotional balance. Other examples of sensory play include making slime, playing with playdough, and enjoying water-based activities.",
+            "hi": "संवेदी खेल गतिविधियों में स्पर्श गतिविधियाँ शामिल हैं जैसे कि फिंगर पेंटिंग या चावल, रेत, या पानी की मोतियों से भरे संवेदी बिन का अन्वेषण करना। ये गतिविधियाँ एक सुखदायक लेकिन उत्तेजक अनुभव प्रदान करती हैं जो ध्यान, आत्म-नियमन, और भावनात्मक संतुलन में सुधार करने में मदद करती हैं। संवेदी खेल के अन्य उदाहरणों में स्लाइम बनाना, प्ले डोह के साथ खेलना, और पानी आधारित गतिविधियों का आनंद लेना शामिल है।"
+          },
+          "steps": {
+            "en": [
+              "Gather materials for sensory bins (e.g., rice, sand, water beads).",
+              "Set up a designated area for sensory play.",
+              "Introduce the materials to the child and explain the activity.",
+              "Encourage exploration and creativity with the materials.",
+              "Supervise the play to ensure safety and engagement.",
+              "Discuss the textures and sensations experienced during play."
+            ],
+            "hi": [
+              "संवेदी बिन के लिए सामग्री इकट्ठा करें (जैसे, चावल, रेत, पानी की बूँदें)।",
+              "संवेदी खेल के लिए एक निर्धारित क्षेत्र स्थापित करें।",
+              "सामग्री को बच्चे के सामने पेश करें और गतिविधि को समझाएं।",
+              "सामग्री के साथ अन्वेषण और रचनात्मकता को प्रोत्साहित करें।",
+              "खेल की निगरानी करें ताकि सुरक्षा और संलग्नता सुनिश्चित हो सके।",
+              "खेल के दौरान अनुभव की गई बनावट और संवेदनाओं पर चर्चा करें।"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Martial Arts",
+          "hi": "मार्शल आर्ट्स"
+        },
+        "sub_heading_text": {
+          "en": "Physical fitness and self-discipline through martial arts",
+          "hi": "मार्शल आर्ट्स के माध्यम से शारीरिक फिटनेस और आत्म-अनुशासन"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#FFF3E0",
+        "textColor": "#FF9800",
+        "buttonGradient": ["#FF9800", "#FFB74D"],
+        "action": "parent_activity",
+        "type": "activity",
+        "details": {
+          "title": {
+            "en": "Martial Arts",
+            "hi": "मार्शल आर्ट्स"
+          },
+          "description": {
+            "en": "Martial arts offer several advantages for children with ADHD, such as enhanced physical fitness, better self-discipline, and improved concentration. Popular choices for kids include karate, taekwondo, and judo.",
+            "hi": "मार्शल आर्ट्स ADHD वाले बच्चों के लिए कई लाभ प्रदान करते हैं, जैसे कि बेहतर शारीरिक फिटनेस, बेहतर आत्म-अनुशासन, और सुधारित ध्यान। बच्चों के लिए लोकप्रिय विकल्पों में कराटे, ताइक्वांडो, और जूडो शामिल हैं।"
+          },
+          "steps": {
+            "en": [
+              "Research local martial arts classes suitable for children.",
+              "Enroll your child in a class that fits their interests and schedule.",
+              "Attend classes regularly to build discipline and skills.",
+              "Encourage practice at home with simple techniques.",
+              "Discuss the values of respect, focus, and self-discipline learned in martial arts."
+            ],
+            "hi": [
+              "बच्चों के लिए उपयुक्त स्थानीय मार्शल आर्ट कक्षाओं की खोज करें।",
+              "अपने बच्चे को एक ऐसी कक्षा में नामांकित करें जो उनकी रुचियों और कार्यक्रम के अनुसार हो।",
+              "अनुशासन और कौशल विकसित करने के लिए नियमित रूप से कक्षाओं में भाग लें।",
+              "सरल तकनीकों के साथ घर पर अभ्यास करने के लिए प्रोत्साहित करें।",
+              "मार्शल आर्ट में सीखे गए सम्मान, ध्यान और आत्म-अनुशासन के मूल्यों पर चर्चा करें।"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Creative Arts",
+          "hi": "रचनात्मक कला"
+        },
+        "sub_heading_text": {
+          "en": "Enhancing focus and self-expression through creative activities",
+          "hi": "रचनात्मक गतिविधियों के माध्यम से ध्यान और आत्म-प्रकाशन को बढ़ाना"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#E1F5FE",
+        "textColor": "#03A9F4",
+        "buttonGradient": ["#03A9F4", "#4FC3F7"],
+        "action": "parent_activity",
+        "type": "activity",
+        "details": {
+          "title": {
+            "en": "Creative Arts",
+            "hi": "रचनात्मक कला"
+          },
+          "description": {
+            "en": "Creative arts activities provide children with ADHD with many advantages, such as improved focus, opportunities for self-expression, and stress reduction. Activities like drawing, painting, and crafting with different materials allow kids to tap into their creativity and direct their energy toward meaningful and enjoyable pursuits.",
+            "hi": "रचनात्मक कला गतिविधियाँ ADHD वाले बच्चों को कई लाभ प्रदान करती हैं, जैसे कि बेहतर ध्यान, आत्म-प्रकाशन के अवसर, और तनाव में कमी। चित्रण, पेंटिंग, और विभिन्न सामग्रियों के साथ शिल्प बनाने जैसी गतिविधियाँ बच्चों को अपनी रचनात्मकता का उपयोग करने और अपनी ऊर्जा को अर्थपूर्ण और आनंददायक प्रयासों की ओर निर्देशित करने की अनुमति देती हैं।"
+          },
+          "steps": {
+            "en": [
+              "Gather various art supplies (paints, crayons, paper, etc.).",
+              "Set up a creative workspace for your child.",
+              "Encourage your child to express themselves through different art forms.",
+              "Provide prompts or themes to inspire creativity.",
+              "Display their artwork to boost confidence and self-expression."
+            ],
+            "hi": [
+              "विभिन्न कला सामग्री (रंग, क्रेयॉन, कागज, आदि) इकट्ठा करें।",
+              "अपने बच्चे के लिए एक रचनात्मक कार्यक्षेत्र स्थापित करें।",
+              "अपने बच्चे को विभिन्न कला रूपों के माध्यम से खुद को व्यक्त करने के लिए प्रोत्साहित करें।",
+              "रचनात्मकता को प्रेरित करने के लिए प्रेरणाएँ या विषय प्रदान करें।",
+              "उनकी कला को प्रदर्शित करें ताकि आत्मविश्वास और आत्म-व्यक्तित्व को बढ़ावा मिल सके।"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Sleep",
+          "hi": "नींद"
+        },
+        "sub_heading_text": {
+          "en": "Improving sleep quality for children with ADHD",
+          "hi": "ADHD वाले बच्चों के लिए नींद की गुणवत्ता में सुधार"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#F3E5F5",
+        "textColor": "#9C27B0",
+        "buttonGradient": ["#9C27B0", "#BA68C8"],
+        "action": "parent_activity",
+        "type": "activity",
+        "details": {
+          "title": {
+            "en": "Sleep",
+            "hi": "नींद"
+          },
+          "description": {
+            "en": "Many children with ADHD struggle to get the necessary amount of rest due to attention difficulties and overstimulation. Establishing a regular bedtime routine and reducing screen time can help improve sleep quality. Additionally, removing caffeine from meals, engaging in calming activities before bed, cuddling with your child, incorporating soothing scents in the bedroom, and using relaxation tapes can all contribute to a more restful night for children with ADHD.",
+            "hi": "कई ADHD वाले बच्चे ध्यान की कठिनाइयों और अधिक उत्तेजना के कारण आवश्यक मात्रा में आराम प्राप्त करने struggle करते हैं। नियमित सोने की दिनचर्या स्थापित करना और स्क्रीन समय को कम करना नींद की गुणवत्ता में सुधार करने में मदद कर सकता है। इसके अतिरिक्त, भोजन से कैफीन को हटाना, बिस्तर से पहले शांत गतिविधियों में संलग्न होना, अपने बच्चे के साथ गले लगाना, बेडरूम में सुखदायक सुगंध शामिल करना, और विश्राम टेप का उपयोग करना सभी ADHD वाले बच्चों के लिए एक अधिक आरामदायक रात में योगदान कर सकते हैं।"
+          },
+          "steps": {
+            "en": [
+              "Establish a consistent bedtime routine.",
+              "Limit screen time at least an hour before bed.",
+              "Create a calming environment in the bedroom (dim lights, soothing scents).",
+              "Engage in relaxing activities before bedtime (reading, quiet play).",
+              "Monitor dietary habits to reduce caffeine intake.",
+              "Encourage your child to express any concerns or fears about sleep."
+            ],
+            "hi": [
+              "एक नियमित सोने की दिनचर्या स्थापित करें।",
+              "सोने से कम से कम एक घंटे पहले स्क्रीन समय को सीमित करें।",
+              "बेडरूम में एक शांत वातावरण बनाएं (कम रोशनी, सुखद सुगंध)।",
+              "सोने से पहले आरामदायक गतिविधियों में संलग्न हों (पढ़ाई, शांत खेल)।",
+              "कैफीन के सेवन को कम करने के लिए आहार की आदतों की निगरानी करें।",
+              "अपने बच्चे को नींद के बारे में किसी भी चिंता या डर को व्यक्त करने के लिए प्रोत्साहित करें।"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Jumping Rope",
+          "hi": "रस्सी कूदना"
+        },
+        "sub_heading_text": {
+          "en": "A fun exercise for cardiovascular health and coordination",
+          "hi": "हृदय स्वास्थ्य और समन्वय के लिए एक मजेदार व्यायाम"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#FFF3E0",
+        "textColor": "#FF9800",
+        "buttonGradient": ["#FF9800", "#FFB74D"],
+        "action": "parent_activity",
+        "type": "activity",
+        "details": {
+          "title": {
+            "en": "Jumping Rope",
+            "hi": "रस्सी कूदना"
+          },
+          "description": {
+            "en": "Jumping rope exercise offers cardiovascular benefits, enhanced coordination, and a productive way to channel excess energy. Incorporate it into the daily routine by starting with a few minutes of practice and gradually increasing the time and intensity.",
+            "hi": "रस्सी कूदने का व्यायाम हृदय संबंधी लाभ, बेहतर समन्वय, और अतिरिक्त ऊर्जा को चैनल करने का एक उत्पादक तरीका प्रदान करता है। इसे दैनिक दिनचर्या में शामिल करें, कुछ मिनटों के अभ्यास से शुरू करें और धीरे-धीरे समय और तीव्रता बढ़ाएं।"
+          },
+          "steps": {
+            "en": [
+              "Choose a suitable jump rope for your child's height.",
+              "Start with a few minutes of practice to build confidence.",
+              "Gradually increase the duration and intensity of jumping.",
+              "Incorporate fun challenges or games to keep it engaging.",
+              "Monitor your child's form to ensure safety while jumping."
+            ],
+            "hi": [
+              "अपने बच्चे की ऊँचाई के लिए उपयुक्त रस्सी कूदने का चयन करें।",
+              "आत्मविश्वास बढ़ाने के लिए कुछ मिनटों का अभ्यास शुरू करें।",
+              "कूदने की अवधि और तीव्रता को धीरे-धीरे बढ़ाएं।",
+              "इसे रोचक बनाए रखने के लिए मजेदार चुनौतियाँ या खेल शामिल करें।",
+              "कूदते समय सुरक्षा सुनिश्चित करने के लिए अपने बच्चे के फॉर्म की निगरानी करें।"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Crossword Puzzles and Picture Puzzles",
+          "hi": "क्रॉसवर्ड पहेलियाँ और चित्र पहेलियाँ"
+        },
+        "sub_heading_text": {
+          "en": "Engaging activities to enhance focus and attention",
+          "hi": "ध्यान और ध्यान बढ़ाने के लिए संलग्न गतिविधियाँ"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#E1BEE7",
+        "textColor": "#9C27B0",
+        "buttonGradient": ["#9C27B0", "#BA68C8"],
+        "action": "parent_activity",
+        "type": "activity",
+        "details": {
+          "title": {
+            "en": "Crossword Puzzles and Picture Puzzles",
+            "hi": "क्रॉसवर्ड पहेलियाँ और चित्र पहेलियाँ"
+          },
+          "description": {
+            "en": "These seemingly simple activities are highly effective for children with ADHD. Crossword puzzles enhance word focus and sequencing skills, while picture puzzles, where kids identify mistakes or hidden objects, help improve attention and concentration.",
+            "hi": "ये एकदम साधारण गतिविधियाँ ADHD वाले बच्चों के लिए अत्यधिक प्रभावी हैं। क्रॉसवर्ड पहेलियाँ शब्द ध्यान और अनुक्रम कौशल को बढ़ाती हैं, जबकि चित्र पहेलियाँ, जहाँ बच्चे गलतियों या छिपी हुई वस्तुओं की पहचान करते हैं, ध्यान और एकाग्रता में सुधार करने में मदद करती हैं।"
+          },
+          "steps": {
+            "en": [
+              "Select age-appropriate crossword and picture puzzles.",
+              "Set aside a quiet time for puzzle-solving.",
+              "Encourage your child to work independently or with assistance.",
+              "Discuss the words or images to enhance understanding.",
+              "Celebrate completed puzzles to encourage continued interest."
+            ],
+            "hi": [
+              "उम्र के अनुसार उपयुक्त क्रॉसवर्ड और चित्र पहेलियाँ चुनें।",
+              "पहेली हल करने के लिए एक शांत समय निर्धारित करें।",
+              "अपने बच्चे को स्वतंत्र रूप से या सहायता के साथ काम करने के लिए प्रोत्साहित करें।",
+              "समझ बढ़ाने के लिए शब्दों या चित्रों पर चर्चा करें।",
+              "पूर्ण की गई पहेलियों का जश्न मनाएं ताकि निरंतर रुचि को प्रोत्साहित किया जा सके।"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Going on a Nature Walk",
+          "hi": "प्रकृति की सैर पर जाना"
+        },
+        "sub_heading_text": {
+          "en": "Exploring the outdoors for stress relief and sensory experiences",
+          "hi": "तनाव राहत और संवेदी अनुभवों के लिए बाहरी दुनिया का अन्वेषण"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#DCEDC8",
+        "textColor": "#689F38",
+        "buttonGradient": ["#689F38", "#9CCC65"],
+        "action": "parent_activity",
+        "type": "activity",
+        "details": {
+          "title": {
+            "en": "Going on a Nature Walk",
+            "hi": "प्रकृति की सैर पर जाना"
+          },
+          "description": {
+            "en": "Nature walks provide children with ADHD an opportunity to enjoy fresh air while exploring their surroundings. This activity reduces stress, boosts mood, and offers a sensory-rich experience that inspires curiosity and learning.",
+            "hi": "प्रकृति की सैर ADHD वाले बच्चों को अपने आस-पास का अन्वेषण करते हुए ताजा हवा का आनंद लेने का अवसर प्रदान करती है। यह गतिविधि तनाव को कम करती है, मूड को बढ़ाती है, और एक संवेदी समृद्ध अनुभव प्रदान करती है जो जिज्ञासा और सीखने को प्रेरित करती है।"
+          },
+          "steps": {
+            "en": [
+              "Choose a safe and interesting location for the walk.",
+              "Prepare a list of items to look for in nature (e.g., specific plants, animals).",
+              "Equip your child with comfortable clothing and shoes.",
+              "Encourage observation and discussion about the surroundings.",
+              "Take breaks to enjoy the environment and reduce fatigue.",
+              "Reflect on the experience afterward to reinforce learning."
+            ],
+            "hi": [
+              "चलने के लिए एक सुरक्षित और दिलचस्प स्थान चुनें।",
+              "प्रकृति में देखने के लिए वस्तुओं की एक सूची तैयार करें (जैसे, विशेष पौधे, जानवर)।",
+              "अपने बच्चे को आरामदायक कपड़े और जूते पहनाएं।",
+              "पर्यावरण के बारे में अवलोकन और चर्चा को प्रोत्साहित करें।",
+              "पर्यावरण का आनंद लेने और थकान को कम करने के लिए ब्रेक लें।",
+              "अनुभव के बाद में विचार करें ताकि सीखने को मजबूत किया जा सके।"
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
