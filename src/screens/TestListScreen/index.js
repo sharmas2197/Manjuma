@@ -1,65 +1,79 @@
 /* eslint-disable react/no-unstable-nested-components */
 import React from 'react';
-import {View, Text, TouchableWithoutFeedback} from 'react-native';
+import {View, Text, TouchableWithoutFeedback, Animated} from 'react-native';
 import LottieView from 'lottie-react-native';
 import styles from './styles';
 import Colors from '../../CustomeStyles/Colors';
 import LinearGradient from 'react-native-linear-gradient';
+import {useLanguage} from '../../context/LanguageContext';
 
-const TestkListScreen = props => {
+const TestListScreen = props => {
   const params = props.route.params;
-  const navigation = props.navigation;
+  const {navigation} = props;
+  const {isHindi} = useLanguage();
+
   const testData = [
     {
-      name: 'Quiz',
+      name: isHindi ? 'प्रश्नोत्तरी' : 'Quiz',
       color: Colors.yellow,
       lottie: require('../../res/quiz2.json'),
-      action: 'popup',
+      action: 'TestScreen',
+      description: isHindi 
+        ? 'मजेदार प्रश्नोत्तरी के साथ अपना ज्ञान जांचें'
+        : 'Test your knowledge with fun quizzes',
+      gradient: ['#FFE0B2', '#FFB74D'],
+      textColor: '#E65100',
     },
     {
-      name: 'Activities',
+      name: isHindi ? 'गतिविधियाँ' : 'Activities',
       color: Colors.lightPink,
       lottie: require('../../res/art1.json'),
-      action: 'createArt',
+      action: 'FunActivityScreen',
+      description: isHindi
+        ? 'रचनात्मक गतिविधियों में भाग लें'
+        : 'Engage in creative activities',
+      gradient: ['#E1BEE7', '#CE93D8'],
+      textColor: '#4A148C',
     },
     {
-      name: 'Diet',
+      name: isHindi ? 'आहार' : 'Diet',
       color: Colors.lightBlue,
       lottie: require('../../res/food1.json'),
-      action: 'makeMusic',
+      action: 'DietScreen',
+      description: isHindi
+        ? 'स्वस्थ आहार योजनाओं का पता लगाएं'
+        : 'Explore healthy diet plans',
+      gradient: ['#B3E5FC', '#81D4FA'],
+      textColor: '#01579B',
     },
   ];
 
-  const navigate = action => {
-    if (action === 'popup') {
-      navigation.navigate('TestScreen', params);
-    } // rest actions defined here
+  const navigate = screen => {
+    navigation.navigate(screen, params);
   };
 
-  function ItemBox(test, index) {
-    let lottiePath = test.lottie;
-    return (
-      <TouchableWithoutFeedback
-        key={index}
-        onPress={() => navigate(test.action)}>
-        <View
-          style={[
-            styles.boxStyle,
-            {
-              backgroundColor: test.color,
-            },
-          ]}>
-          <LottieView
-            source={lottiePath}
-            style={{height: 100, width: 100}}
-            autoPlay
-            loop
-          />
-          <Text style={styles.testName}>{test.name}</Text>
-        </View>
-      </TouchableWithoutFeedback>
-    );
-  }
+  const ItemBox = (test, index) => (
+    <TouchableWithoutFeedback
+      key={index}
+      onPress={() => navigate(test.action)}>
+      <LinearGradient
+        colors={test.gradient}
+        start={{x: 0, y: 0}}
+        end={{x: 1, y: 1}}
+        style={[styles.boxStyle]}>
+        <LottieView
+          source={test.lottie}
+          style={{height: 80, width: 80}}
+          autoPlay
+          loop
+        />
+        <Text style={[styles.testName, {color: test.textColor}]}>{test.name}</Text>
+        <Text style={[styles.descriptionText, {color: test.textColor + 'CC'}]}>
+          {test.description}
+        </Text>
+      </LinearGradient>
+    </TouchableWithoutFeedback>
+  );
 
   return (
     <LinearGradient
@@ -67,7 +81,9 @@ const TestkListScreen = props => {
       start={{x: 0, y: 0}}
       end={{x: 1, y: 1}}
       style={styles.container}>
-      <Text style={styles.headingText}>Activity Area</Text>
+      <Text style={styles.headingText}>
+        {isHindi ? 'गतिविधि क्षेत्र' : 'Activity Area'}
+      </Text>
       {testData.map((item, index) => {
         return ItemBox(item, index);
       })}
@@ -75,4 +91,4 @@ const TestkListScreen = props => {
   );
 };
 
-export default TestkListScreen;
+export default TestListScreen;

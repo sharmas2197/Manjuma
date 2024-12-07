@@ -10,6 +10,7 @@ const Colors = {
   yellow: '#F9E165',
   lightPink: '#EDADD2',
   lightBlue: '#9DC5F9',
+  gray: "#e6e6e6"
 };
 
 export default Colors;

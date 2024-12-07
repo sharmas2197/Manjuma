@@ -1,6 +1,7 @@
-import * as React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
+import React, {useState} from 'react';
+import {View, StyleSheet} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import LanguageToggleButton from './LanguageToggleButton';
 
 // Screens
 import DescriptionScreen from '../screens/DescriptionScreen';
@@ -9,44 +10,85 @@ import TestScreen from '../screens/TestScreen';
 import FunActivityScreen from '../screens/FunActivityScreen';
 import LeaderboardScreen from '../screens/LeaderboardScreen';
 import DisordersScreen from '../screens/DisordersScreen';
+import GameActivity from '../screens/GameActivity';
+import DietScreen from '../screens/DietScreen';
+import ActivityDetails from '../screens/ActivityDetails';
 
-export default function Navigator() {
-  const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator();
+
+const Navigator = () => {
+  const [currentScreen, setCurrentScreen] = useState('DescriptionScreen');
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="DescriptionScreen">
+    <View style={{flex: 1}}>
+      <Stack.Navigator 
+        initialRouteName="DescriptionScreen"
+        screenListeners={{
+          state: (e) => {
+            const currentRoute = e.data.state.routes[e.data.state.index];
+            setCurrentScreen(currentRoute.name);
+          },
+        }}>
         <Stack.Screen
           name="DescriptionScreen"
           component={DescriptionScreen}
-          options={{headerShown: false}} // Optional: Corrected title for better readability
+          options={{headerShown: false}}
         />
         <Stack.Screen
           name="DisorderScreen"
           component={DisordersScreen}
-          options={{headerShown: false}} // Optional: Corrected title for better readability
+          options={{headerShown: false}}
         />
         <Stack.Screen
           name="TestListScreen"
           component={TestListScreen}
-          options={{title: 'Test List', headerShown: false}} // Optional: More user-friendly title
+          options={{title: 'Test List', headerShown: false}}
         />
         <Stack.Screen
           name="TestScreen"
           component={TestScreen}
-          options={{headerShown: false}} // Optional: More user-friendly title
+          options={{headerShown: false}}
         />
         <Stack.Screen
           name="FunActivityScreen"
           component={FunActivityScreen}
-          options={{title: 'Fun Activities'}} // Optional: More user-friendly title
+          options={{headerShown: false}}
         />
         <Stack.Screen
           name="LeaderboardScreen"
           component={LeaderboardScreen}
-          options={{title: 'Leaderboard'}} // Optional: More user-friendly title
+          options={{title: 'Leaderboard'}}
+        />
+        <Stack.Screen
+          name="GameActivity"
+          component={GameActivity}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="DietScreen"
+          component={DietScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen 
+          name="ActivityDetails" 
+          component={ActivityDetails}
+          options={{headerShown: false}}
         />
       </Stack.Navigator>
-    </NavigationContainer>
+      <View style={styles.languageToggleContainer}>
+        <LanguageToggleButton currentScreen={currentScreen} />
+      </View>
+    </View>
   );
-}
+};
+
+export default Navigator;
+
+const styles = StyleSheet.create({
+  languageToggleContainer: {
+    position: 'absolute',
+    top: 10,
+    right: 10,
+    zIndex: 1000,
+  },
+});

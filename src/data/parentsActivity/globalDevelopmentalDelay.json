@@ -1,0 +1,704 @@
+{
+  "kidsActivityData": {
+    "header_text": "kidsActivities",
+    "lottieAnimation": "../../res/tiger.json",
+    "cardsData": [
+      {
+        "heading_text": {
+          "en": "Ball sort puzzle",
+          "hi": "गेंद छांटने की पहेली"
+        },
+        "sub_heading_text": {
+          "en": "Sort colorful balls to match patterns and develop logical thinking",
+          "hi": "तार्किक सोच विकसित करने के लिए रंगीन गेंदों को पैटर्न से मिलान करें"
+        },
+        "button_text": "playNow",
+        "cardColor": "#FFF5F7",
+        "textColor": "#FF4081",
+        "buttonGradient": ["#FF4081", "#FF79B0"],
+        "action": "game_activity",
+        "type": "puzzle"
+      },
+      {
+        "heading_text": {
+          "en": "Math & Nursery Quiz",
+          "hi": "गणित और नर्सरी क्विज"
+        },
+        "sub_heading_text": {
+          "en": "Fun Quizzes combining basic math and nursery rhymes",
+          "hi": "बुनियादी गणित और नर्सरी कविताओं को मिलाकर मजेदार प्रश्नोत्तरी"
+        },
+        "button_text": "startQuiz",
+        "cardColor": "#F0F7FF",
+        "textColor": "#2196F3",
+        "buttonGradient": ["#2196F3", "#64B5F6"],
+        "action": "game_activity",
+        "type": "quiz"
+      }
+    ]
+  },
+  "parentsActivityData": {
+    "header_text": "parentsActivities",
+    "lottieAnimation": "../../res/parent.json",
+    "cardsData": [
+      {
+        "heading_text": {
+          "en": "Speech Development",
+          "hi": "बोलने का विकास"
+        },
+        "sub_heading_text": {
+          "en": "Help your child say Na-Na, Da-Da, Ya-Ya with interactive exercises",
+          "hi": "इंटरैक्टिव अभ्यास के साथ अपने बच्चे को ना-ना, दा-दा, या-या कहने में मदद करें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#FFF3E0",
+        "textColor": "#FF9800",
+        "buttonGradient": ["#FF9800", "#FFB74D"],
+        "action": "parent_activity",
+        "type": "speech",
+        "details": {
+          "title": {
+            "en": "Speech Development Exercise",
+            "hi": "बोलने का विकास अभ्यास"
+          },
+          "description": {
+            "en": "Encourage the child to mimic sounds like \"da-da\" and \"na-na\" by making eye contact with the child and if the child responds to your talking apply honey behind the upper teeth of the child. This can help develop their vocalization skills.",
+            "hi": "बच्चे को \"दा-दा\" और \"ना-ना\" जैसी आवाजों की नकल करने के लिए प्रोत्साहित करें, बच्चे से आंखों का संपर्क बनाएं और यदि बच्चा आपकी बात का जवाब दे तो बच्चे के ऊपरी दांतों के पीछे शहद लगाएं। यह उनके बोलने के कौशल को विकसित करने में मदद कर सकता है।"
+          },
+          "steps": {
+            "en": [
+              "Make eye contact with your child",
+              "Demonstrate sounds like \"da-da\" and \"na-na\"",
+              "Encourage mimicking through gentle repetition",
+              "Reward with honey behind upper teeth when they respond",
+              "Practice regularly with different simple sounds"
+            ],
+            "hi": [
+              "अपने बच्चे से आंखों का संपर्क बनाएं",
+              "\"दा-दा\" और \"ना-ना\" जैसी आवाजें दिखाएं",
+              "धीमी पुनरावृत्ति के माध्यम से नकल करने के लिए प्रोत्साहित करें",
+              "जब वे प्रतिक्रिया दें तो ऊपरी दांतों के पीछे शहद से पुरस्कृत करें",
+              "विभिन्न सरल आवाजों के साथ नियमित रूप से अभ्यास करें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Object Grasping",
+          "hi": "वस्तुओं को पकड़ना"
+        },
+        "sub_heading_text": {
+          "en": "Help develop grip strength through guided exercises",
+          "hi": "मार्गदर्शित अभ्यासों के माध्यम से पकड़ की ताकत विकसित करने में मदद करें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#E8F5E9",
+        "textColor": "#4CAF50",
+        "buttonGradient": ["#4CAF50", "#81C784"],
+        "action": "parent_activity",
+        "type": "motor",
+        "details": {
+          "title": {
+            "en": "Object Grasping Exercise",
+            "hi": "वस्तु पकड़ने का अभ्यास"
+          },
+          "description": {
+            "en": "Place a toy or biscuit in their hand and tell them to stop moving. If their grip is weak, gently close their fist with your hand. Release the pressure slowly, then place maida paste on their palm before giving them a small toy to hold.",
+            "hi": "उनके हाथ में एक खिलौना या बिस्कुट रखें और उन्हें हिलने से रोकें। यदि उनकी पकड़ कमजोर है, तो अपने हाथ से धीरे से उनकी मुट्ठी बंद करें। दबाव को धीरे-धीरे छोड़ें, फिर एक ोटा खिलौना पकड़ने से पहले उनकी हथेली पर मैदा का पेस्ट लगाएं।"
+          },
+          "steps": {
+            "en": [
+              "Place toy or biscuit in child's hand",
+              "Ask them to hold still",
+              "Gently assist in closing their fist if needed",
+              "Gradually release pressure",
+              "Use maida paste technique for better grip",
+              "Practice with various small toys"
+            ],
+            "hi": [
+              "बच्चे के हाथ में खिलौना या बिस्कुट रखें",
+              "उन्हें स्थिर रहने के लिए कहें",
+              "यदि आवश्यक हो तो उनकी मुट्ठी बंद करने में धीरे से सहायता करें",
+              "धीरे-धीरे दबाव छोड़ें",
+              "बेहतर पकड़ के लिए मैदा पेस्ट तकनीक का उपयोग करें",
+              "विभिन्न छोटे खिलौनों के साथ अभ्यास करें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Crawling Practice",
+          "hi": "रेंगने का अभ्यास"
+        },
+        "sub_heading_text": {
+          "en": "Guide your child through crawling milestones",
+          "hi": "रेंगने के विकास में अपने बच्चे का मार्गदर्शन करें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#F3E5F5",
+        "textColor": "#9C27B0",
+        "buttonGradient": ["#9C27B0", "#BA68C8"],
+        "action": "parent_activity",
+        "type": "motor",
+        "details": {
+          "title": {
+            "en": "Crawling Development Exercise",
+            "hi": "रेंगने का विकास अभ्यास"
+          },
+          "description": {
+            "en": "To help a child improve their strength and mobility, place them on their stomach and put toys just out of reach. Gently tap the toy to grab their attention and encourage them to pick it up. Gradually increase the distance and encourage crawling by placing their palms and knees on the floor. Use a towel to elevate their trunk and offer support as they move forward towards the toys.",
+            "hi": "बच्चे की ताकत औ गतिशीलता में सुधार करने में मदद करने के लिए, उन्हें पेट के बल लिटाएं और खिलौने उनकी पहुंच से थोड़ी दूर रखें। उनका ध्यान आकर्षित करने के लिए खिलौने को धीरे से थपथपाएं और उन्हें उठाने के लिए प्रोत्साहित करें। धीरे-धीरे दूरी बढ़ाएं और उनकी हथेलियों और घुटनों को फर्श पर रखकर रेंगने के लिए प्रोत्साहित करें। उनके धड़ को ऊपर उठाने के लिए तौलिए का उपयोग करें और जैसे-जैसे वे खिलौनों की ओर आगे बढ़ें, सहायता परदान करें।"
+          },
+          "steps": {
+            "en": [
+              "Place child on stomach with toys nearby",
+              "Position toys just out of reach",
+              "Tap toys to grab attention",
+              "Guide palms and knees placement",
+              "Use towel for trunk support",
+              "Gradually increase reaching distance"
+            ],
+            "hi": [
+              "बच्चे को पास में खिलौनों के साथ पेट के बल लिटाएं",
+              "खिलौनों को पहुंच से थोड़ा दूर रखें",
+              "ध्यान आकर्षित करने के लिए खिलौनों को थपथपाएं",
+              "हथेलियों और घुटनों के रखने में मार्गदर्शन करें",
+              "धड़ के सहारे के लिए तौलिए का उपयोग करें",
+              "धीरे-धीरे पहुंच की दूरी बढ़ाएं"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Independent Walking",
+          "hi": "स्वतंत्र चलना"
+        },
+        "sub_heading_text": {
+          "en": "Help your child walk without support",
+          "hi": "अपने बच्चे को बिना सहारे चलने में मदद करें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#FFF3E0",
+        "textColor": "#FF9800",
+        "buttonGradient": ["#FF9800", "#FFB74D"],
+        "action": "parent_activity",
+        "type": "motor",
+        "details": {
+          "title": {
+            "en": "Independent Walking Exercise",
+            "hi": "स्वतंत्र चलने का अभ्यास"
+          },
+          "description": {
+            "en": "Stand behind the child and support them at the shoulders while positioning your toes at their heels. Guide them to step forward, starting with short distances and gradually increasing. Support the child with a three-wheeled aid system, gradually reducing assistance as they gain confidence.",
+            "hi": "बच्चे के पीछे खड़े हों और अपने पैर के अंगूठे उनकी एड़ियों पर रखते हुए उनके कंधों को सहारा दें। उन्हें आगे कदम बढ़ाने में मार्गदर्शन करें, छोटी दूरी से शुरू करें और धीरे-धीरे बढ़ाएं। बच्चे को तीन-पहिया सहायता प्रणाली से सहारा ें, जैसे-जैसे उनका आत्मविश्वास बढ़े, सहायता को धीरे-धीरे कम करें।"
+          },
+          "steps": {
+            "en": [
+              "Position yourself behind child",
+              "Support shoulders gently",
+              "Place your toes at their heels",
+              "Start with short walking distances",
+              "Use three-wheeled support system",
+              "Gradually reduce assistance",
+              "Practice reverse walking with support"
+            ],
+            "hi": [
+              "बच्चे के पीछे स्थिति लें",
+              "कंधों को धीरे से सहारा दें",
+              "अपने पैर के अंगूठे उनकी एड़ियों पर रखें",
+              "छोटी चलने की दूरी से शुरू करें",
+              "तीन-पहिया सहायता प्रणाली का उपयोग करें",
+              "धीरे-धीरे सहायता कम करें",
+              "सहायता के साथ पीछे चलने का भ्यास करें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Self-Drinking Skills",
+          "hi": "स्वयं पीने का कौशल"
+        },
+        "sub_heading_text": {
+          "en": "Teach your child to drink independently",
+          "hi": "अपने बच्चे को स्वतंत्र रूप से पीना सिखाएं"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#E8F5E9",
+        "textColor": "#4CAF50",
+        "buttonGradient": ["#4CAF50", "#81C784"],
+        "action": "parent_activity",
+        "type": "daily",
+        "details": {
+          "title": {
+            "en": "Independent Drinking Exercise",
+            "hi": "स्वतंत्र पीने का अभ्यास"
+          },
+          "description": {
+            "en": "Encourage the child to drink from a cup with a small amount of liquid by providing physical assistance and gradually reducing support. Show them how to drink by sipping from a glass yourself.",
+            "hi": "बच्चे को थोड़ी मात्रा में तरल पदार्थ के साथ कप से पीने क लिए प्रोत्साहित करें, शारीरिक सहायता प्रदान करें और धीरे-धीरे सहायता कम करें। स्वयं गिलास से पीकर उन्हें पीने का तरीका दिखाएं।"
+          },
+          "steps": {
+            "en": [
+              "Start with small amounts of liquid",
+              "Demonstrate proper drinking technique",
+              "Provide physical support initially",
+              "Gradually reduce assistance",
+              "Practice with different cup sizes",
+              "Encourage independent holding"
+            ],
+            "hi": [
+              "थोड़ी मात्रा में तरल से शुरू करें",
+              "सही पीने की तकनीक प्रदर्शित करें",
+              "शुरू में शारीरिक सहायता प्रदान करें",
+              "धीरे-धीरे सहायता कम करें",
+              "वि��िन्न कप आकारों के साथ अभ्यास करें",
+              "स्वतंत्र रूप से पकड़ने को प्रोत्साहित करें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Toilet Training",
+          "hi": "शौचालय प्रशिक्षण"
+        },
+        "sub_heading_text": {
+          "en": "Help your child indicate toilet needs",
+          "hi": "अपने बच्चे को शौचालय की जरूरत बताने में मदद करें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#E1F5FE",
+        "textColor": "#03A9F4",
+        "buttonGradient": ["#03A9F4", "#4FC3F7"],
+        "action": "parent_activity",
+        "type": "daily",
+        "details": {
+          "title": {
+            "en": "Toilet Training Exercise",
+            "hi": "शौचालय प्रशिक्षण अभ्यास"
+          },
+          "description": {
+            "en": "To help a child with toileting needs, observe and document their bathroom habits for a week before starting training. Bring the child to the toilet a few minutes before their usual time and use a consistent word like \"sussu\" when they sit on the toilet. Reward them for using the toilet.",
+            "hi": "बच्चे को शौचालय की जरूरतों में मदद करने के लिए, प्रशिक्षण शुरू करने से पहले एक सप्ताह तक उनकी बाथरूम आदतों को देखें और दर्ज करें। बच्चे को उनके सामान्य समय से कुछ मिनट पहले शौचालय ले जाएं और जब वे शौचालय पर बैठें तो \"सुसु\" जैसा एक निरंतर शब्द का उपयोग करें। शौचालय का उपयोग करने के लिए उन्हें पुरस्कृत करें।"
+          },
+          "steps": {
+            "en": [
+              "Document bathroom habits for a week",
+              "Identify regular timing patterns",
+              "Use consistent vocabulary",
+              "Take child to toilet proactively",
+              "Reward successful attempts",
+              "Maintain regular schedule"
+            ],
+            "hi": [
+              "एक सप्ताह के लिए बाथरूम की आदतों को दर्ज करें",
+              "नियमित समय पैटर्न की पहचान करें",
+              "निरंतर शब्दावली का उपयोग करें",
+              "बच्चे ो सक्रिय रूप से शौचालय ले जाएं",
+              "सफल प्रयासों को पुरस्कृत करें",
+              "नियमित कार्यक्रम बनाए रखें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Sentence Formation",
+          "hi": "वाक्य निर्माण"
+        },
+        "sub_heading_text": {
+          "en": "Help your child speak in small sentences",
+          "hi": "अपने बच्चे को छोटे वाक्यों में बोलने में मदद करें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#F3E5F5",
+        "textColor": "#9C27B0",
+        "buttonGradient": ["#9C27B0", "#BA68C8"],
+        "action": "parent_activity",
+        "type": "speech",
+        "details": {
+          "title": {
+            "en": "Sentence Formation Exercise",
+            "hi": "वाक्य निर्माण अभ्यास"
+          },
+          "description": {
+            "en": "Engage the child with a story and pictures. Arrange the pictures in a sequence, then ask the child to narrate the sentences. Show a picture poster and request the child to explain the character's actions. Demonstrate a basic activity and let the child describe what they saw.",
+            "hi": "बच्चे को कहानी और चित्रों के साथ व्यस्त रखें। चित्रों को क्रम में व्यवस्थित करें, फिर बच्चे से वाक्य सुनाने को कहें। एक चित्र पोस्टर दिखाएं और बच्चे से पात्र की क्रियाओं को समझाने के लिए कहें। एक बुनियादी गतिविधि प्रदर्शित करें और बच्चे को बताने दें कि उन्होंने क्या देखा।"
+          },
+          "steps": {
+            "en": [
+              "Use picture stories for engagement",
+              "Arrange pictures in sequence",
+              "Ask child to narrate events",
+              "Use picture posters for descriptions",
+              "Demonstrate simple activities",
+              "Encourage verbal descriptions"
+            ],
+            "hi": [
+              "चित्र कहानियों का उपयोग करें",
+              "चित्रों को क्रम में व्यवस्थित करें",
+              "बच्चे से घटनाओं का वर्णन करने को कहें",
+              "विवरण के लिए चित्र पोस्टर का उपयोग करें",
+              "सरल गतिविधियां प्रदर्शित करें",
+              "मौखिक विवरण को प्रोत्साहित करें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Teeth Brushing",
+          "hi": "दांत ब्रश करना"
+        },
+        "sub_heading_text": {
+          "en": "Teach proper brushing technique",
+          "hi": "सही ब्रश करने की तकनीक सिखाएं"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#E0F7FA",
+        "textColor": "#00BCD4",
+        "buttonGradient": ["#00BCD4", "#4DD0E1"],
+        "action": "parent_activity",
+        "type": "daily",
+        "details": {
+          "title": {
+            "en": "Teeth Brushing Exercise",
+            "hi": "दांत ब्रश करने का अभ्यास"
+          },
+          "description": {
+            "en": "Encourage proper teeth brushing habits by demonstrating and guiding a child through the process. Use a mirror for them to see themselves while brushing, gradually decreasing support as they improve.",
+            "hi": "बच्चे को प्रक्रिया के माध्यम से प्रदर्शन और मार्गदर्शन करके उचित दांत ब्रश करने की आदतों को प्रोत्साहित करें। ब्रश करते समय उन्हें खुद को देखने के लिए दर्पण का उपयोग करें, जैसे-जैसे वे सुधार करें, धीरे-धीरे सहायता कम करें।"
+          },
+          "steps": {
+            "en": [
+              "Demonstrate proper brushing technique",
+              "Use mirror for visual feedback",
+              "Guide hand movements initially",
+              "Practice regular timing",
+              "Gradually reduce assistance",
+              "Encourage independent brushing"
+            ],
+            "hi": [
+              "सही ब्रश करने की तकनीक प्रदर्शित करें",
+              "दृश्य प्रतिक्रिया के लिए दर्पण का उपयोग करें",
+              "शुरू में हाथ की गति का मार्गदर्शन करें",
+              "नियमित समय का अभ्यास करें",
+              "धीरे-धीरे सहायता कम करें",
+              "स्वतंत्र ब्रशिंग को प्रोत्साहित करें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Dressing Skills",
+          "hi": "कपड़े पहनने का कौशल"
+        },
+        "sub_heading_text": {
+          "en": "Help with buttons and clothing",
+          "hi": "बटन और कपड़ों में मदद करें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#FFF3E0",
+        "textColor": "#FF9800",
+        "buttonGradient": ["#FF9800", "#FFB74D"],
+        "action": "parent_activity",
+        "type": "daily",
+        "details": {
+          "title": {
+            "en": "Dressing Skills Exercise",
+            "hi": "कपड़े पहनने का अभ्यास"
+          },
+          "description": {
+            "en": "Help the child unbutton and button clothing by gently guiding their hands. Encourage the child to wrap a beloved toy in a cloth and secure it with a button. Allow the child to do tasks independently after initial guidance.",
+            "hi": "बच्चे के हाथों को धीरे से मार्गदर्शन करके कपड़ों के बटन खोलने और लगाने में मदद करें। बच्चे को एक प्रिय खिलौने को कपड़े में लपेटने और बटन से सुरक्षित करने के लिए प्रोत्साहित करें। प्रारंभिक मार्गदर्शन के बाद बच्चे को स्वतंत्र रूप से कार्य करने दें।"
+          },
+          "steps": {
+            "en": [
+              "Guide hands for buttoning/unbuttoning",
+              "Practice with large buttons first",
+              "Use favorite toys for motivation",
+              "Encourage independent attempts",
+              "Provide verbal instructions",
+              "Celebrate successful completion"
+            ],
+            "hi": [
+              "बटन लगाने/खोलने के लिए हाथों का मार्गदर्शन करें",
+              "पहले बड़े बटनों के साथ अभ्यास करें",
+              "प्रेरणा के लिए पसंदीदा खिलौनों का उपयोग करें",
+              "स्वतंत्र प्रयासों को प्रोत्साहित करें",
+              "मौखिक निर्देश प्रदान करें",
+              "सफल समापन का जश्न मनाएं"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Self-Feeding Skills",
+          "hi": "स्वयं भोजन करने का कौशल"
+        },
+        "sub_heading_text": {
+          "en": "Guide your child to eat independently",
+          "hi": "अपने बच्चे को स्वतंत्र रूप से खाने में मार्गदर्शन करें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#FFE0B2",
+        "textColor": "#F57C00",
+        "buttonGradient": ["#F57C00", "#FFB74D"],
+        "action": "parent_activity",
+        "type": "daily",
+        "details": {
+          "title": {
+            "en": "Self-Feeding Exercise",
+            "hi": "स्वयं भोजन करने का अभ्यास"
+          },
+          "description": {
+            "en": "Start the training with nutritious food options like idly, dosa, and chapati. Guide the child to pick up and eat food gradually decreasing physical assistance. Once proficient, introduce foods like rice and dal. Place small portions on the plate for the child to choose from.",
+            "hi": "इडली, डोसा और रोटी जैसे पौष्टिक भोजन विकल्पों के साथ प्रशिक्षण शुरू करें। बच्चे को भोजन उठाने और खाने में मार्गदर्शन करें, धीरे-धीरे शारीरिक सहायता कम करें। एक बार कुशल हो जाने पर, चावल और दाल जैसे खाद्य पदार्थ शुरू करें। बच्चे के चयन के लिए प्लेट पर छोटे हिस्से रखें।"
+          },
+          "steps": {
+            "en": [
+              "Begin with easy-to-handle foods",
+              "Guide hand movements initially",
+              "Gradually reduce assistance",
+              "Introduce more complex foods",
+              "Use small portions",
+              "Cut food into manageable sizes"
+            ],
+            "hi": [
+              "आसानी से संभलने वाले खाद्य पदार्थों से शुरू करें",
+              "शुरू में हाथ की गति का मार्गदर्शन करें",
+              "धीरे-धीरे सहायता कम करें",
+              "अधिक जटिल खाद्य पदार्थ शुरू करें",
+              "छोटे हिस्सों का उपयोग करें",
+              "भोजन को प्रबंधनीय आकार में काटें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Hair Combing",
+          "hi": "बाल कंघी करना"
+        },
+        "sub_heading_text": {
+          "en": "Teach proper grooming habits",
+          "hi": "उचित साफ-सफाई की आदतें सिखाएं"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#E1BEE7",
+        "textColor": "#9C27B0",
+        "buttonGradient": ["#9C27B0", "#BA68C8"],
+        "action": "parent_activity",
+        "type": "daily",
+        "details": {
+          "title": {
+            "en": "Hair Combing Exercise",
+            "hi": "बाल कंघी करने का अभ्यास"
+          },
+          "description": {
+            "en": "Encourage a child to participate in grooming activities by demonstrating and then allowing them to mimic combing hair in front of a mirror. Provide assistance as needed and gradually allow the child to become more independent in their grooming routine.",
+            "hi": "बच्चे को दर्पण के सामने बाल कंघी करने का प्रदर्शन करके और फिर उन्हें नकल करने की अनुमति देकर साफ-सफाई की गतिविधियों में भाग लेने के लिए प्रोत्साहित करें। आवश्यकतानुसार सहायता प्रदान करें और धीरे-धीरे बच्चे को उनकी साफ-सफाई की दिनचर्या में अधिक स्वतंत्र होने दें।"
+          },
+          "steps": {
+            "en": [
+              "Demonstrate proper combing technique",
+              "Use mirror for visual feedback",
+              "Guide hand movements",
+              "Practice regularly",
+              "Gradually reduce assistance",
+              "Encourage independence"
+            ],
+            "hi": [
+              "सही कंघी करने की तकनीक प्रदर्शित करें",
+              "दृश्य प्रतिक्रिया के लिए दर्पण का उपयोग करें",
+              "हाथ की गति का मार्गदर्शन करें",
+              "नियमित रूप से अभ्यास करें",
+              "धीरे-धीरे सहायता कम करें",
+              "स्वतंत्रता को प्रोत्साहित करें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Following Instructions",
+          "hi": "निर्देशों का पालन"
+        },
+        "sub_heading_text": {
+          "en": "Help your child follow multiple instructions",
+          "hi": "अपने बच्चे को कई निर्देशों का पालन करने में मदद करें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#DCEDC8",
+        "textColor": "#689F38",
+        "buttonGradient": ["#689F38", "#9CCC65"],
+        "action": "parent_activity",
+        "type": "cognitive",
+        "details": {
+          "title": {
+            "en": "Following Instructions Exercise",
+            "hi": "निर्देश पालन अभ्यास"
+          },
+          "description": {
+            "en": "At an early stage, give children one simple instruction, such as \"Close the door.\" Once they can follow this, give two instructions like \"Open the window\" and \"Get the plate.\" Remind them gently if they forget. Start with simple commands and gradually increase complexity.",
+            "hi": "शुरुआती चरण में, बच्चों को एक सरल निर्देश दें, जैसे \"दरवाज बंद करो।\" जब वे इसका पालन कर सकें, तो दो निर्देश दें जैसे \"खिड़की खोलो\" और \"प्लेट लाओ।\" यदि वे भूल जाएं तो धीरे से याद दिलाएं। सरल आदेशों से शुरू करें और धीरे-धीरे जटिलता बढ़ाएं।"
+          },
+          "steps": {
+            "en": [
+              "Start with single instructions",
+              "Progress to two instructions",
+              "Use clear, simple language",
+              "Provide gentle reminders",
+              "Gradually increase complexity",
+              "Celebrate successful completion"
+            ],
+            "hi": [
+              "एक निर्देश से शुरू करें",
+              "दो निर्देशों तक बढ़ें",
+              "स्पष्ट, सरल भाषा का प्रयोग करें",
+              "धीरे से याद दिलाएं",
+              "धीरे-धीरे जटिलता बढ़ाएं",
+              "सफल समापन का जश्न मनाएं"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Word Reading",
+          "hi": "शब्द पढ़ना"
+        },
+        "sub_heading_text": {
+          "en": "Teach reading simple words",
+          "hi": "सरल शब्द पढ़ना सिखाएं"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#B3E5FC",
+        "textColor": "#0288D1",
+        "buttonGradient": ["#0288D1", "#4FC3F7"],
+        "action": "parent_activity",
+        "type": "cognitive",
+        "details": {
+          "title": {
+            "en": "Word Reading Exercise",
+            "hi": "शब्द पढ़ने का अभ्यास"
+          },
+          "description": {
+            "en": "Show the child images of animals, objects, plants, and transportation. When he identifies the pictures, reveal the corresponding name. Once the child understands, detach the word from the picture. Display only two pictures at a time with their names.",
+            "hi": "बच्चे को जानवरों, वस्तुओं, पौधों और वाहनों की तस्वीरें दिखाएं। जब वह चित्रों की पहचान करे, तो उनका संबंधित नाम बताएं। जब बच्चा समझ जाए, तो शब्द को चित्र से अलग करें। एक समय में केवल दो चित्र उनके नाम के साथ दिखाएं।"
+          },
+          "steps": {
+            "en": [
+              "Show images with corresponding words",
+              "Practice picture identification",
+              "Introduce word-picture matching",
+              "Separate words from pictures",
+              "Practice with two words at a time",
+              "Progress to more complex words"
+            ],
+            "hi": [
+              "शब्दों के साथ चित्र दिखाएं",
+              "चित्र पहचान का अभ्यास करें",
+              "शब्द-चित्र मिलान शुरू करें",
+              "शब्दों को चित्रों से अलग करें",
+              "दो शब्दों के साथ अभ्यास करें",
+              "अधिक जटिल शब्दों की ओर बढ़ें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Button Practice",
+          "hi": "बटन अभ्यास"
+        },
+        "sub_heading_text": {
+          "en": "Learn to button clothes independently",
+          "hi": "स्वतंत्र रूप से कपड़ों के बटन लगाना सीखें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#FFE0B2",
+        "textColor": "#FF5722",
+        "buttonGradient": ["#FF5722", "#FF8A65"],
+        "action": "parent_activity",
+        "type": "daily",
+        "details": {
+          "title": {
+            "en": "Buttoning Exercise",
+            "hi": "बटन लगाने का अभ्यास"
+          },
+          "description": {
+            "en": "Help the child learn to button up their shirt or coat by demonstrating and guiding them through the process. Start with larger buttons and gradually decrease the size as they become more comfortable and independent.",
+            "hi": "बच्चे को प्रक्रिया का प्रदर्शन और मार्गदर्शन करके शर्ट या कोट के बटन लगाना सिखाएं। बड़े बटनों से शुरू करें और जैसे-जैसे वे आरामदायक और स्वतंत्र हों, धीरे-धीरे आकार छोटा करें।"
+          },
+          "steps": {
+            "en": [
+              "Start with large buttons",
+              "Demonstrate proper technique",
+              "Guide hands through motions",
+              "Practice with different sizes",
+              "Provide verbal instructions",
+              "Gradually reduce assistance"
+            ],
+            "hi": [
+              "बड़े बटनों से शुरू करें",
+              "सही तकनीक प्रदर्शित करें",
+              "हाथों को गति में मार्गदर्शन करें",
+              "विभिन्न आकारों के साथ अभ्यास करें",
+              "मौखिक निर्देश प्रदान करें",
+              "धीरे-धीरे सहायता कम करें"
+            ]
+          }
+        }
+      },
+      {
+        "heading_text": {
+          "en": "Name Recognition",
+          "hi": "नाम पहचान"
+        },
+        "sub_heading_text": {
+          "en": "Help your child respond to their name",
+          "hi": "अपने बच्चे को उनके नाम पर प्रतिक्रिया करने में मदद करें"
+        },
+        "button_text": "viewDetails",
+        "cardColor": "#E3F2FD",
+        "textColor": "#2196F3",
+        "buttonGradient": ["#2196F3", "#64B5F6"],
+        "action": "parent_activity",
+        "type": "cognitive",
+        "details": {
+          "title": {
+            "en": "Name Recognition Exercise",
+            "hi": "नाम पहचान अभ्यास"
+          },
+          "description": {
+            "en": "Address the child by name during activities like feeding and playing, show him his reflection in the mirror and speak his name gently. Inquire about his whereabouts by asking \"Where is (name)?\" Guide his hand to his chest and say \"Here is (name)\" while looking into the mirror.",
+            "hi": "खिलाने और खेलने जैसी गतिविधियों के दौरान बच्चे को नाम से संबोधित करें, उसे दर्पण में अपना प्रतिबिंब दिखाएं और उसका नाम धीरे से बोलें। \"(नाम) कहाँ है?\" पूछकर उसके बारे में पूछताछ करें। दर्पण में देखते हुए उसका हाथ उसकी छाती पर ले जाएं और कहें \"यहाँ है (नाम)\"।"
+          },
+          "steps": {
+            "en": [
+              "Use child's name during daily activities",
+              "Show mirror reflection while saying name",
+              "Play \"Where is (name)?\" game",
+              "Guide hand to chest while saying \"Here is (name)\"",
+              "Practice with mirror exercises regularly"
+            ],
+            "hi": [
+              "दैनिक गतिविधियों के दौरान बच्चे का नाम उपयोग करें",
+              "नाम बोलते समय दर्पण में प्रतिबिंब दिखाएं",
+              "\"(नाम) कहाँ है?\" खेल खेलें",
+              "\"यहाँ है (नाम)\" कहते हुए हाथ को छाती पर ले जाएं",
+              "दर्पण के अभ्यास नियमित रूप से करें"
+            ]
+          }
+        }
+      }
+    ]
+  }
+} 
